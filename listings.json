@@ -1,5 +1,11 @@
 [
   {
+    "listing": "/notes.html",
+    "items": [
+      "/notes/template/index.html"
+    ]
+  },
+  {
     "listing": "/blog.html",
     "items": [
       "/posts/4- Deconstructing Decision Trees/index.html",
