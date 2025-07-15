@@ -9,8 +9,8 @@
 <link>https://cooper-richason.github.io/blog/blog.html</link>
 <atom:link href="https://cooper-richason.github.io/blog/blog.xml" rel="self" type="application/rss+xml"/>
 <description>Data Science Blog and Portfolio</description>
-<generator>quarto-1.6.42</generator>
-<lastBuildDate>Sun, 13 Jul 2025 05:00:00 GMT</lastBuildDate>
+<generator>quarto-1.7.32</generator>
+<lastBuildDate>Sun, 13 Jul 2025 00:00:00 GMT</lastBuildDate>
 <item>
   <title>Deconstructing Decision Trees</title>
   <dc:creator>Cooper Richason</dc:creator>
@@ -91,7 +91,7 @@
   <category>tree models</category>
   <category>decision trees</category>
   <guid>https://cooper-richason.github.io/blog/posts/4- Deconstructing Decision Trees/</guid>
-  <pubDate>Sun, 13 Jul 2025 05:00:00 GMT</pubDate>
+  <pubDate>Sun, 13 Jul 2025 00:00:00 GMT</pubDate>
 </item>
 <item>
   <title>My First Machine Learning Project: Fun or RUN</title>
@@ -445,7 +445,7 @@ font-style: inherit;">=</span> gr.themes.Base())</span>
   <category>Machine Learning</category>
   <category>Gradio</category>
   <guid>https://cooper-richason.github.io/blog/posts/1- Run or Fun/</guid>
-  <pubDate>Thu, 07 Dec 2023 06:00:00 GMT</pubDate>
+  <pubDate>Thu, 07 Dec 2023 00:00:00 GMT</pubDate>
 </item>
 </channel>
 </rss>
