@@ -32,6 +32,8 @@ website:
   twitter-card:
     creator: "@DataCooper"
     card-style: summary
+  repo-url: https://github.com/cooper-richason/blog
+  repo-actions: [edit, source]
   announcement: 
     icon: cone
     dismissable: true
