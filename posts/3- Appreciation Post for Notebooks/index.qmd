@@ -1,0 +1,21 @@
+---
+title: Appreciation Post for Notebooks
+author: Cooper Richason
+date: '2025-03-26'
+date-modified: '2025-03-26'
+categories: []
+draft: true
+toc: true
+---
+
+![](default_header.png)
+
+------------------------------------------------------------------------
+
+I'm not sure if I will ever love a tool as much as I love using notebooks. Ever since I started using them in school, they have been a power friend and tool in my daily workflow, and I'm not sure if I will ever find another tool as flexible, easy to use, and powerful as notebooks. Because it really does unleash all the power of python with the literate benefits of having markdown and the huge benefits of having interactive code through code cells. 
+
+- NB Dev
+- Documentation 
+- Explorative nature
+- Easy debugging
+- Way less bugs and issues since you are going through the process step by step

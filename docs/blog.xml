@@ -1,0 +1,451 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss  xmlns:atom="http://www.w3.org/2005/Atom" 
+      xmlns:media="http://search.yahoo.com/mrss/" 
+      xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+      xmlns:dc="http://purl.org/dc/elements/1.1/" 
+      version="2.0">
+<channel>
+<title>Cooper Richason</title>
+<link>https://cooper-richason.github.io/blog/blog.html</link>
+<atom:link href="https://cooper-richason.github.io/blog/blog.xml" rel="self" type="application/rss+xml"/>
+<description>Data Science Blog and Portfolio</description>
+<generator>quarto-1.6.42</generator>
+<lastBuildDate>Sun, 13 Jul 2025 05:00:00 GMT</lastBuildDate>
+<item>
+  <title>Deconstructing Decision Trees</title>
+  <dc:creator>Cooper Richason</dc:creator>
+  <link>https://cooper-richason.github.io/blog/posts/4- Deconstructing Decision Trees/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p><img src="https://cooper-richason.github.io/blog/posts/4- Deconstructing Decision Trees/default_header.png" class="img-fluid"></p>
+<hr>
+<p>I first learned about decision trees when I took Jeremy Howard’s incredible deep learning course, <a href="https://course.fast.ai/">Practical Deep Learning for Coders</a> in 2023, Jeremy made such a convincing argument in favor of using decision trees, especially as model when starting project, because of the benefits they offer:</p>
+<ol type="1">
+<li><p><strong>They are interoperable</strong> - It is very easy to understand why a decision is made and what are the most important factors in making a decision. This can be really valuable if you need to be able to explain how decision are made to stakeholders, but even if you don’t end up using a tree model as your final product, starting with can be invaluable when one is starting a project and needs to get a feel for the data and experiment with with features.</p></li>
+<li><p><strong>They are robust</strong> – Unlike other models like logistic regression, tree based models are do not require data normalization, can handle missing values, and they can handle both categorical and numerical features with ease.</p></li>
+<li><p><strong>They are quick to build</strong> – Because of there robust nature and how simple they are under the hood, one doesn’t need to do a bunch of leg work before one can get a model running.</p></li>
+</ol>
+<p>Hopefully those benefits have enticed you enough to want to learn more about decision trees! To begin let’s start with a single tree model, aka a decision tree.</p>
+<section id="how-do-decision-trees-work" class="level3">
+<h3 class="anchored" data-anchor-id="how-do-decision-trees-work">How Do Decision Trees Work?</h3>
+<p>Tree based models work by making a series of <strong>binary splits</strong> of the data. A binary spit is basically just a yes/no or true/false question about the data like “is a value in a column greater than X”, but by doing this over and over we can slowly split the data into purer groups if we choose good splits. To find the best split at each step, the model looks at all of the values available in each column and finds the combination does the best job of separating into the chunk of data.</p>
+<p>For example, let’s assume we are working with a dataset about high school students and what type of college they are going to next year. To make the first split, the model looks at all of the information and finds that the <strong>whether the student goes to a private high school (“HS”)</strong> is the best predictor of whether a student goes to a private university:</p>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">flowchart TD
+        A["Starting Dataset"]
+        A -- Private HS --&gt; C(["Predict Private"])
+        A -- Public  HS--&gt; D(["Public HS Students"])
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+<p>Let’s assume that the model tries split the public high school students group since that group has the lower accuracy and that the model learns that whether the student had an SAT score greater or less than 1800 is the best predictor of whether a public school student will go to a private or public university:</p>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">flowchart TD
+        A["Starting Dataset"]
+        A -- Private HS --&gt; C(["Predict Private"])
+        A -- Public  HS--&gt; D["Public HS Students"]
+       D -- less than 1800 --&gt; E(["Predict Public"])
+      D -- 1800 and higher--&gt; F(["Predict Private"])
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+<p>Now we have a decision tree based on off two splits! When running a model in the real world, we will probably want to have have more than two splits since the more splits you have, the better the model is able to make, up to a point. Eventually, we need to stop splitting the tree so that we don’t overfit the model to our data. With python packages like sci-kit learn, the model will continue to split the tree over and over until it is not able to make any more splits because of stopping criteria you specify. Some examples of stopping criteria are the total depth of the tree or the number of nodes is a tree, but the ones I typically prefer are the minimum size of a resulting leaf or specifying the minimum number of records needed to make a new split.</p>
+<p>Lastly, I should probably mention the terminology used. When talking about decision trees, we call each of the split points a “node”, with the starting node being called the <strong>root node</strong> and the subsequent nodes the <strong>decision nodes</strong>. We then refer to the final data chucks as the <strong>leaves</strong> of the tree, and these are with ovals in the diagram.</p>
+</section>
+<section id="example-with-code" class="level3">
+<h3 class="anchored" data-anchor-id="example-with-code">Example with Code</h3>
+<p><strong>Terms Covered:</strong></p>
+<dl>
+<dt>Binary Splits:</dt>
+<dd>
+<p>True or False questions that split the data into two groups. Each split is determined by what split will do the best job of purifying the data.</p>
+</dd>
+<dt>Decision Tree:</dt>
+<dd>
+<p>A model that makes predictions by making a series of binary splits</p>
+</dd>
+</dl>
+
+
+</section>
+
+<a onclick="window.scrollTo(0, 0); return false;" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a> ]]></description>
+  <category>tree models</category>
+  <category>decision trees</category>
+  <guid>https://cooper-richason.github.io/blog/posts/4- Deconstructing Decision Trees/</guid>
+  <pubDate>Sun, 13 Jul 2025 05:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>My First Machine Learning Project: Fun or RUN</title>
+  <dc:creator>Cooper Richason</dc:creator>
+  <link>https://cooper-richason.github.io/blog/posts/1- Run or Fun/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p><img src="https://cooper-richason.github.io/blog/posts/1- Run or Fun/header.jpg" class="img-fluid"></p>
+<hr>
+<p>Welcome to my latest adventure in the world of data science! I’ve recently started watching Jeremy Howard’s amazing lecture series on deep learning, <a href="https://course.fast.ai">Practical Deep Learning for Coders</a>, and I’ve been feeling very inspired by Jeremy to play around with deep learning and simply try things.</p>
+<p>For my first deep learning project, I decided to create an image classifier, since Jermey had several examples on these, and I eventually landed on the idea of a movie poster classifier! My goals with this project are to:</p>
+<ol type="1">
+<li><p>Learn about deep learning</p></li>
+<li><p>Build a model that “successfully” classifies movies as a Comedy or Horror movies</p></li>
+<li><p>Deploy my model online in an interactive format</p></li>
+</ol>
+<section id="the-challenge-horror-or-comedy" class="level3">
+<h3 class="anchored" data-anchor-id="the-challenge-horror-or-comedy">The Challenge: Horror or Comedy?</h3>
+<p>For the first iteration of “Fun or RUN”, I set out to build a deep learning model that predicts whether a movie is a horror or a comedy movie based on its poster. I gathered around 150 images for each category using Jeremy’s DuckDuckGo image function. However, I faced a challenge: the search results often included repeated movies, especially when breaking down my searches by decade. I’m considering implementing web scraping from IMDb for more varied and accurate data in the future, but the images I was able to gather so far are good enough to build the model.</p>
+<div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">from</span> duckduckgo_search <span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">import</span> ddg_images</span>
+<span id="cb1-2"></span>
+<span id="cb1-3"><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">def</span> search_images(term, max_images<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">30</span>):</span>
+<span id="cb1-4">    <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">print</span>(<span class="ss" style="color: #20794D;
+background-color: null;
+font-style: inherit;">f"Searching for '</span><span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">{</span>term<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">}</span><span class="ss" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'"</span>)</span>
+<span id="cb1-5">    <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">return</span> L(ddg_images(term, max_results<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span>max_images)).itemgot(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'image'</span>)</span>
+<span id="cb1-6"></span>
+<span id="cb1-7">searches <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'horror'</span>,<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'comedy'</span></span>
+<span id="cb1-8">path <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> Path(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'photos'</span>)</span>
+<span id="cb1-9"></span>
+<span id="cb1-10"><span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">for</span> o <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">in</span> searches:</span>
+<span id="cb1-11">    dest <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> (path<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">/</span>o)</span>
+<span id="cb1-12">    dest.mkdir(exist_ok<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">True</span>, parents<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">True</span>)</span>
+<span id="cb1-13">    download_images(dest, urls<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span>search_images(<span class="ss" style="color: #20794D;
+background-color: null;
+font-style: inherit;">f'2020s </span><span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">{</span>o<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">}</span><span class="ss" style="color: #20794D;
+background-color: null;
+font-style: inherit;"> movie poster'</span>))</span>
+<span id="cb1-14">    sleep(<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">15</span>)  <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Pause between searches to avoid over-loading server</span></span>
+<span id="cb1-15">    download_images(dest, urls<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span>search_images(<span class="ss" style="color: #20794D;
+background-color: null;
+font-style: inherit;">f'2010s </span><span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">{</span>o<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">}</span><span class="ss" style="color: #20794D;
+background-color: null;
+font-style: inherit;"> movie poster'</span>))</span>
+<span id="cb1-16">    sleep(<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">15</span>)</span>
+<span id="cb1-17">    download_images(dest, urls<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span>search_images(<span class="ss" style="color: #20794D;
+background-color: null;
+font-style: inherit;">f'2000s </span><span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">{</span>o<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">}</span><span class="ss" style="color: #20794D;
+background-color: null;
+font-style: inherit;"> movie poster'</span>))</span>
+<span id="cb1-18">    sleep(<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">15</span>)</span>
+<span id="cb1-19">    download_images(dest, urls<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span>search_images(<span class="ss" style="color: #20794D;
+background-color: null;
+font-style: inherit;">f'1990s </span><span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">{</span>o<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">}</span><span class="ss" style="color: #20794D;
+background-color: null;
+font-style: inherit;"> movie poster'</span>))</span>
+<span id="cb1-20">    sleep(<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">15</span>)</span>
+<span id="cb1-21">    download_images(dest, urls<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span>search_images(<span class="ss" style="color: #20794D;
+background-color: null;
+font-style: inherit;">f'1980s </span><span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">{</span>o<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">}</span><span class="ss" style="color: #20794D;
+background-color: null;
+font-style: inherit;"> movie poster'</span>))</span>
+<span id="cb1-22">    sleep(<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">15</span>)</span>
+<span id="cb1-23">    resize_images(path<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">/</span>o, max_size<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">400</span>, dest<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span>path<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">/</span>o)</span></code></pre></div>
+</section>
+<section id="training-the-model-a-learning-experience" class="level3">
+<h3 class="anchored" data-anchor-id="training-the-model-a-learning-experience">Training the Model: A Learning Experience</h3>
+<p>I chose <code>resnet18</code>, a timm model, as my learner for its simplicity and speed, as my primary goal was to understand the model-building process rather than achieving high accuracy. I know that there are likely even better models that make this trade-off, but I opted to make a quick selection of a <em>good</em> model rather than taking a lot of time to find the <em>perfect</em> model. I trained the resnet18 on a random split of the movie posters, with the folder names serving as the category labels. Post-training, I also used fastai’s <code>ImageClassifierCleaner</code> to refine the model, removing mislabeled images. This step helped with cleaning faulty images from the DuckDuckGo search.</p>
+<div class="sourceCode" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1">dls <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> DataBlock(</span>
+<span id="cb2-2">    blocks<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span>(ImageBlock, CategoryBlock),</span>
+<span id="cb2-3">    get_items<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span>get_image_files,</span>
+<span id="cb2-4">    splitter<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span>RandomSplitter(valid_pct<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="fl" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0.2</span>),</span>
+<span id="cb2-5">    get_y<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span>parent_label,</span>
+<span id="cb2-6">    item_tfms<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span>[Resize(<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">192</span>, method<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'squish'</span>)]</span>
+<span id="cb2-7">).dataloaders(path, bs<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">32</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb3" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Training the model:</span></span>
+<span id="cb3-2">learn <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> vision_learner(dls, resnet18, metrics<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span>error_rate)</span>
+<span id="cb3-3"></span>
+<span id="cb3-4"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Finetuning the nodel:</span></span>
+<span id="cb3-5">learn.fine_tune(<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">5</span>)</span></code></pre></div>
+</section>
+<section id="building-an-gradio-interface" class="level3">
+<h3 class="anchored" data-anchor-id="building-an-gradio-interface">Building an Gradio Interface:</h3>
+<p>After exporting the model, I then used <a href="https://www.gradio.app/">Gradio</a> to build an interface. I made a pretty basic interface with the ability to upload files, a couple pre-uploaded examples, and a display of the model’s predictions. Overall, it seems like the model does pretty well with stereotypical movie posters for both genres, but it struggles with less obvious examples, such as The Shinning or Disney’s Wish.</p>
+<p>Here is the general structure of the Gradio <code>Interface</code> function:</p>
+<div class="sourceCode" id="cb4" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1">demo <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> gr.Interface(fn, inputs, outputs) </span>
+<span id="cb4-2"></span>
+<span id="cb4-3"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Additional items like examples, title, and a description can also be added</span></span>
+<span id="cb4-4"></span>
+<span id="cb4-5">demo <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> gr.Interface(fn, inputs, outputs,</span>
+<span id="cb4-6">                    examples <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> my_examples_list,</span>
+<span id="cb4-7">                    title <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Super Cool Interface"</span></span>
+<span id="cb4-8">                    description <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"I take in inputs and give you an output"</span>)</span></code></pre></div>
+<p>After creating a function to take the input image and give a prediction, here was my interface:</p>
+<div class="sourceCode" id="cb5" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">## Interface Setup:</span></span>
+<span id="cb5-2"></span>
+<span id="cb5-3">categories <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> (<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Comedy 😂'</span>,<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Horror 👻'</span>)</span>
+<span id="cb5-4"></span>
+<span id="cb5-5"><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">def</span> classify_image(img):</span>
+<span id="cb5-6">    prediction,idx,probs <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> learn.predict(img)</span>
+<span id="cb5-7">    <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">return</span> <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">dict</span>(<span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">zip</span>(categories,<span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">map</span>(<span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">float</span>,probs)))</span>
+<span id="cb5-8"></span>
+<span id="cb5-9"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">## Creating Interface:</span></span>
+<span id="cb5-10"></span>
+<span id="cb5-11">examples <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> [<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'barbie.jpg'</span>,<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'hangover.jpg'</span>,<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'theshinning.jpg'</span>,<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'freddy.jpg'</span>]</span>
+<span id="cb5-12"></span>
+<span id="cb5-13">demo <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> gr.Interface(classify_image, gr.Image(), gr.Label(), </span>
+<span id="cb5-14">                    examples<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span>examples, </span>
+<span id="cb5-15">                    title <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Fun or RUN"</span>,</span>
+<span id="cb5-16">                    description <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Image classifier that predicts a movie's genre based on the movie poster!"</span>,</span>
+<span id="cb5-17">                    theme <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> gr.themes.Base())</span>
+<span id="cb5-18">demo.launch()</span></code></pre></div>
+</section>
+<section id="try-the-ai-yourself" class="level2 page-columns page-full">
+<h2 class="anchored" data-anchor-id="try-the-ai-yourself"><strong>Try the AI Yourself!</strong></h2>
+<script type="module" src="https://gradio.s3-us-west-2.amazonaws.com/4.7.1/gradio.js"></script>
+<gradio-app src="https://datacooper-movie-predictions.hf.space"></gradio-app>
+
+<div class="no-row-height column-margin column-container"><div class="">
+<p><a href="https://github.com/cooper-richason/movie_predictions" class="btn btn-outline-info">GitHub Repository</a></p>
+</div><div class="">
+<p><a href="https://huggingface.co/spaces/DataCooper/movie_predictions" class="btn btn-outline-primary">Huggingface Space</a></p>
+</div></div>
+<section id="future-horizons-expanding-fun-or-run" class="level3">
+<h3 class="anchored" data-anchor-id="future-horizons-expanding-fun-or-run">Future Horizons: Expanding “Fun or RUN”</h3>
+<p>My journey doesn’t stop here! I’m planning to enhance the model’s accuracy, broaden its genre recognition capabilities, and upload it to Huggingface Spaces. My next step involves using web scraping to gather a more diverse and accurate collection of movie posters from IMDb, taking advantage of their extensive genre listings.</p>
+</section>
+<section id="wrapping-up" class="level3">
+<h3 class="anchored" data-anchor-id="wrapping-up">Wrapping Up</h3>
+<p>This project has been an incredible learning experience, blending my love for movies with my passion for data science. It’s fascinating to see how AI can interpret visual media, and I’m excited to see where this path leads. I encourage you to try out Fun or RUN and share your thoughts. Have you worked on a similar project? Let’s exchange ideas and learn from each other!</p>
+
+
+</section>
+</section>
+
+<a onclick="window.scrollTo(0, 0); return false;" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a> ]]></description>
+  <category>Python</category>
+  <category>Fast.ai</category>
+  <category>Machine Learning</category>
+  <category>Gradio</category>
+  <guid>https://cooper-richason.github.io/blog/posts/1- Run or Fun/</guid>
+  <pubDate>Thu, 07 Dec 2023 06:00:00 GMT</pubDate>
+</item>
+</channel>
+</rss>

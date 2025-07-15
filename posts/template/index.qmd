@@ -1,0 +1,15 @@
+---
+title: Post Template
+author: Cooper Richason
+date: '2023-12-07'
+date-modified: '2025-03-08'
+categories: []
+draft: true
+toc: true
+---
+
+![](default_header.png)
+
+------------------------------------------------------------------------
+
+Start Post Here

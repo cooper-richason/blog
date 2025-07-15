@@ -1,0 +1,30 @@
+/*-- scss:defaults --*/
+$body-color:#0A334D;
+$content-padding-top: 0px;
+
+// Navigation Update
+$navbar-bg: #163865;
+$navbar-fg: #f0f5fa;
+
+// Updating the code block style
+div.sourceCode {
+    @extend .card;
+    @extend .bg-light;
+    @extend .mb-3;
+
+    // Add padding to the top and bottom
+    padding-top: 10px;    
+    padding-bottom: 10px; 
+}
+
+// Adding more padding to paragraph text
+p {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+:root {
+    --mermaid-edge-color: #0A334D !important;
+  }
+  
+$content-padding-top: 1rem;

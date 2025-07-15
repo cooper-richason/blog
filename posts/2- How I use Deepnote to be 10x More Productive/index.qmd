@@ -1,0 +1,51 @@
+---
+title: How I use Deepnote to be 10x More Productive
+author: Cooper Richason
+date: '2025-03-26'
+date-modified: '2025-03-26'
+categories: []
+draft: true
+toc: true
+---
+
+![](default_header.png)
+
+------------------------------------------------------------------------
+
+Like most data scientist, I started my journey by using python in Jupyter Notebooks, and to this day, I am still a big fan of using notebooks. [They are interactive, literate, and highly flexible.](https://www.youtube.com/watch?v=9Q6sLbz37gk) One issue, however, is figuring out how to use notebooks in production. 
+
+This was a wall I hit as soon as I started trying to apply what I learned in school to the work I was doing at Recovery.com, and since I didn't have anyone to I could go to for help with this, I had to do my own research to try to find a way to run my python scripts, locked away in notebooks, in a cost effective, repeatable, and low effort way. I was also hoping that I could figure out a way to make my work in Jupyter Notebooks more accessible to others, so that I could convince members of my team to join me in using the awesome power of python!
+
+Tried:
+- Looking into a hosted jupyter labs thing
+- Found google Colab, but didn't have persistent storage
+- Then found hosted notebooks like Hex and Datalore
+- Eventually arrived at Deepnote, which seemed the most polished and had everything I needed
+
+Right from the start, it felt very intuitive, had basically everything I needed like cron scheduling, storage, and easy to use intergrations with Snowflake, Google Drive, and Git Hub.
+
+How I use Deepnote to be 10x more productive:
+1. I use scheduled notebooks to create scripts/piplines that are written in python, well documented, and easy for stakeholders to use with Data Apps
+
+2. I use a system of shared python modules between notebooks to reuse code I've written for interacting with APIs. This has allowed me to do cool things like creating wrapper modules that can grab data directly from primary sources, clean the data, and produce dataframes for me to use. All within a few lines of code that specify what I want the module to grab me. Many times, this allows me to grab and check data faster than someone trying to use a GUI like Google Analytics Explore Reports or navigate around our CRM to find something. It also has allowed me to make my work reproducible  
+
+3. I use API triggers to chain notebooks together, to make modular jobs that are easier to manage
+
+4. I use the schedules in flexible ways by incorporating timestamp checks into the script, so that hourly runs don't always mean hourly messages that could generate noise
+
+5. I allow Stakeholders to manually trigger reports or jobs they care about through Streamlit and Slack using the API.
+
+4. I use the flexibility of python to build data pipelines that can grab data directly from sources, clean an transform the data, compute and analyze it, and generate reports that go to slack
+
+5. I use data apps to build reoccurring reports for calculating metrics stakeholders care about (OKR Reports)
+
+6. I use integration with Snowflake to easily pull data. This used to be the main way I got data from Snowflake, but I have switched to using an IDE as I've done more data engineering work. Their intergration has still allowed me to easily get data without having to mess around with writing the code
+
+8. I use the integration with Google Drive to have shared storage between notebooks
+
+7. I use the free compute to generate demos - Streamlit
+
+
+Benefits:
+- Unlocks the power and flexibility of python so that Deepnote is the most flexible solution. I can pull in data from almost anywhere, interact with any API, so I can do cool things like create automated messages in slack, build full ETL pipelines, and deploy models.
+- Most of all, I'm not restricted by others, so I can work fast and note have to wait for someone to build an a component for me.

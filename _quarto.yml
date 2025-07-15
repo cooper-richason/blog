@@ -1,0 +1,36 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "Cooper Richason"
+  site-url: "https://cooper-richason.github.io/blog/"
+  description: "Data Science Blog and Portfolio"
+  navbar:
+    right:
+      - blog.qmd
+      - icon: github
+        href: https://github.com/cooper-richason
+      - icon: twitter
+        href: https://x.com/datacooper?s=21
+      - icon: linkedin
+        href: https://linkedin.com/in/cooperrichason/
+  back-to-top-navigation: true
+  page-footer: 
+    left: "Copyright 2023, Cooper Richason" 
+    right: 
+      - icon: github
+        href: https://github.com/cooper-richason
+      - icon: twitter 
+        href: https://x.com/datacooper?s=21
+      - icon: rss
+        href: index.xml
+  twitter-card:
+    creator: "@DataCooper"
+    card-style: summary
+
+format:
+  html:
+    theme:
+      - morph
+      - theme.scss

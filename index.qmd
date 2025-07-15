@@ -1,0 +1,20 @@
+---
+title: "About"
+image: profile_image.JPG
+about:
+  template: jolla
+  links:
+    - icon: twitter
+      text: Twitter/X
+      href: https://x.com/datacooper?s=21
+    - icon: linkedin
+      text: LinkedIn
+      href: https://linkedin.com/cooperrichason/
+    - icon: github
+      text: Github
+      href: https://github.com/cooper-richason
+---
+
+Hey! I'm Cooper, and I'm currently a student at UW-Madison pursuing a degree in Economics while specializing in Data Science. My journey has taken an exciting turn towards harnessing the power of data to solve complex problems.
+
+In addition to my academic pursuits, I'm actively engaged in a data science role at RehabPath where I use my skills to help people find mental health and addiction treatment. I'm deeply passionate about leveraging data to create positive change and am constantly seeking new opportunities to apply my skills and expand my knowledge. Let's connect and explore how we can collaborate to tackle challenges with the power of data.

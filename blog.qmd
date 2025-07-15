@@ -1,0 +1,15 @@
+---
+title: "Data Discoveries"
+listing:
+  contents: posts
+  sort: "date desc"
+  type: default
+  categories: true
+  sort-ui: false
+  filter-ui: false
+  feed: true
+page-layout: full
+title-block-banner: false
+---
+
+I am a believer in sharing what you've learned, sometimes the hard way, with others so they can accelerate their learning and avoid the mistakes I made. Here, I aim to share everything I learn that might interest, benefit, or amuse others.
