@@ -2,6 +2,7 @@
   {
     "listing": "/blog.html",
     "items": [
+      "/posts/5- blog-post-ideas-for-data-scientists/index.html",
       "/posts/4- Deconstructing Decision Trees/index.html",
       "/posts/1- Run or Fun/index.html"
     ]
