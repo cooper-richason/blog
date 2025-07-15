@@ -14,25 +14,11 @@
     "text": "Try the AI Yourself!\n\n\n\n\nGitHub Repository\n\nHuggingface Space\n\n\nFuture Horizons: Expanding “Fun or RUN”\nMy journey doesn’t stop here! I’m planning to enhance the model’s accuracy, broaden its genre recognition capabilities, and upload it to Huggingface Spaces. My next step involves using web scraping to gather a more diverse and accurate collection of movie posters from IMDb, taking advantage of their extensive genre listings.\n\n\nWrapping Up\nThis project has been an incredible learning experience, blending my love for movies with my passion for data science. It’s fascinating to see how AI can interpret visual media, and I’m excited to see where this path leads. I encourage you to try out Fun or RUN and share your thoughts. Have you worked on a similar project? Let’s exchange ideas and learn from each other!"
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "About",
+    "objectID": "notes/template/index.html",
+    "href": "notes/template/index.html",
+    "title": "Cooper Richason",
     "section": "",
-    "text": "Hey! I’m Cooper, and I’m currently a student at UW-Madison pursuing a degree in Economics while specializing in Data Science. My journey has taken an exciting turn towards harnessing the power of data to solve complex problems.\nIn addition to my academic pursuits, I’m actively engaged in a data science role at RehabPath where I use my skills to help people find mental health and addiction treatment. I’m deeply passionate about leveraging data to create positive change and am constantly seeking new opportunities to apply my skills and expand my knowledge. Let’s connect and explore how we can collaborate to tackle challenges with the power of data.\n\n\n Back to top"
-  },
-  {
-    "objectID": "notes.html",
-    "href": "notes.html",
-    "title": "Notes",
-    "section": "",
-    "text": "In an effort to share what I learn with others and give back to the community, I post notes that I take here if I think they will be of value to others.\n\n\n\n\n\n\n\n\n\n\n\n\nAuthor\n\n\n\n\n\n\n\n\n \n\n\n\n\n\n\nNo matching items\n Back to top"
-  },
-  {
-    "objectID": "blog.html",
-    "href": "blog.html",
-    "title": "Data Discoveries",
-    "section": "",
-    "text": "I am a believer in sharing what you’ve learned, sometimes the hard way, with others so they can accelerate their learning and avoid the mistakes I made. Here, I aim to share everything I learn that might interest, benefit, or amuse others.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDeconstructing Decision Trees\n\n\n\ntree models\n\ndecision trees\n\n\n\nA beginner’s guide to using decision trees and how to use them\n\n\n\n\n\nJul 13, 2025\n\n\nCooper Richason\n\n\n\n\n\n\n\n\n\n\n\n\nMy First Machine Learning Project: Fun or RUN\n\n\n\nPython\n\nFast.ai\n\nMachine Learning\n\nGradio\n\n\n\n\n\n\n\n\n\nDec 7, 2023\n\n\nCooper Richason\n\n\n\n\n\nNo matching items\n Back to top"
+    "text": "Just a test thing\n\n\n\n Back to top"
   },
   {
     "objectID": "about.html",
@@ -42,11 +28,25 @@
     "text": "Hey! I’m Cooper, and I’m currently a student at UW-Madison pursuing a degree in Economics while specializing in Data Science. My journey has taken an exciting turn towards harnessing the power of data to solve complex problems.\nIn addition to my academic pursuits, I’m actively engaged in a data science role at RehabPath where I use my skills to help people find mental health and addiction treatment. I’m deeply passionate about leveraging data to create positive change and am constantly seeking new opportunities to apply my skills and expand my knowledge. Let’s connect and explore how we can collaborate to tackle challenges with the power of data!\n\n\n Back to top"
   },
   {
-    "objectID": "notes/template/index.html",
-    "href": "notes/template/index.html",
-    "title": "Cooper Richason",
+    "objectID": "blog.html",
+    "href": "blog.html",
+    "title": "Data Discoveries",
     "section": "",
-    "text": "Just a test thing\n\n\n\n Back to top"
+    "text": "I am a believer in sharing what you’ve learned, sometimes the hard way, with others so they can accelerate their learning and avoid the mistakes I made. Here, I aim to share everything I learn that might interest, benefit, or amuse others.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDeconstructing Decision Trees\n\n\n\ntree models\n\ndecision trees\n\n\n\nA beginner’s guide to using decision trees and how to use them\n\n\n\n\n\nJul 13, 2025\n\n\nCooper Richason\n\n\n\n\n\n\n\n\n\n\n\n\nMy First Machine Learning Project: Fun or RUN\n\n\n\nPython\n\nFast.ai\n\nMachine Learning\n\nGradio\n\n\n\n\n\n\n\n\n\nDec 7, 2023\n\n\nCooper Richason\n\n\n\n\n\nNo matching items\n Back to top"
+  },
+  {
+    "objectID": "notes.html",
+    "href": "notes.html",
+    "title": "Notes",
+    "section": "",
+    "text": "In an effort to share what I learn with others and give back to the community, I post notes that I take here if I think they will be of value to others.\n\n\n\n\n\n\n\n\n\n\n\n\nAuthor\n\n\n\n\n\n\n\n\n \n\n\n\n\n\n\nNo matching items\n Back to top"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "About",
+    "section": "",
+    "text": "Hey! I’m Cooper, and I’m currently a student at UW-Madison pursuing a degree in Economics while specializing in Data Science. My journey has taken an exciting turn towards harnessing the power of data to solve complex problems.\nIn addition to my academic pursuits, I’m actively engaged in a data science role at RehabPath where I use my skills to help people find mental health and addiction treatment. I’m deeply passionate about leveraging data to create positive change and am constantly seeking new opportunities to apply my skills and expand my knowledge. Let’s connect and explore how we can collaborate to tackle challenges with the power of data.\n\n\n Back to top"
   },
   {
     "objectID": "posts/4- Deconstructing Decision Trees/index.html",

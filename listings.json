@@ -1,15 +1,15 @@
 [
   {
-    "listing": "/notes.html",
-    "items": [
-      "/notes/template/index.html"
-    ]
-  },
-  {
     "listing": "/blog.html",
     "items": [
       "/posts/4- Deconstructing Decision Trees/index.html",
       "/posts/1- Run or Fun/index.html"
+    ]
+  },
+  {
+    "listing": "/notes.html",
+    "items": [
+      "/notes/template/index.html"
     ]
   }
 ]
