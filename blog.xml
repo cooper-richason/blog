@@ -10,7 +10,60 @@
 <atom:link href="https://cooper-richason.github.io/blog/blog.xml" rel="self" type="application/rss+xml"/>
 <description>Data Science Blog and Portfolio</description>
 <generator>quarto-1.7.32</generator>
-<lastBuildDate>Sun, 13 Jul 2025 00:00:00 GMT</lastBuildDate>
+<lastBuildDate>Mon, 14 Jul 2025 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>Blog Post Ideas for Data Scientists</title>
+  <dc:creator>Cooper Richason</dc:creator>
+  <link>https://cooper-richason.github.io/blog/posts/5- blog-post-ideas-for-data-scientists/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p><img src="https://cooper-richason.github.io/blog/posts/5- blog-post-ideas-for-data-scientists/default_header.png" class="img-fluid"></p>
+<hr>
+<p>If you’re a Data Scientists like me, you have been probably been given the advice of starting a blog. The only downside is that creating a blog is a lot of work! You have to build a website, come up with ideas for posts, write up something that is hopefully interesting and helpful, and share your work where it will be seen.</p>
+<p>I can’t really help you with most of that, but I would love to share my homework on the kinds of content that you could share/write.</p>
+<p>I’m going to mainly focus on content around sharing one’s educational journey, but this ideas can be adapted to people of all skill sets.</p>
+<section id="general-ideas" class="level2">
+<h2 class="anchored" data-anchor-id="general-ideas">General Ideas:</h2>
+<section id="model-overview" class="level3">
+<h3 class="anchored" data-anchor-id="model-overview">1. Model Overview:</h3>
+<p>Write up an article explaining how a model works. This could maybe be a quick overview or a deep dive depending on how much time you are willing to put into it.</p>
+<p><strong>Value to You:</strong> Forces you to deeply understand the algorithm, and demonstrates to others that you can breakdown complicated topics.</p>
+<p><strong>Value to the Reader:</strong> For readers who are unfamiliar with the model, a well written article could be help them grasp the fundamentals of the model and give them an intuition for how it works. For others, this could be a good article to refresh their knowledge.</p>
+<p>Examples: - <a href="https://medium.com/the-forecaster/tsmixer-the-latest-forecasting-model-by-google-2fd1e29a8ccb">TSMixer: The Latest Forecasting Model by Google</a></p>
+</section>
+<section id="model-walkthrough" class="level3">
+<h3 class="anchored" data-anchor-id="model-walkthrough">2. Model Walkthrough:</h3>
+<p>After writing up an article explain how a model theoretically works, some readers may want to dive a little deeper and learn how to actually implement that model. That’s where sharing an accompanying article walking through actually using the model will come in handy. I also find that having skeleton projects set up the way I like to work can be really handy, so this could also be seen as a templating effort to help yourself down the line.</p>
+<p><strong>Value to You:</strong> Re-enforces your knowledge of the model and gives you the opportunity to sent up a project template for the future.</p>
+<p><strong>Value to the Reader:</strong> Shows them how to implement the model and gives them a easy way to tinker.</p>
+</section>
+<section id="model-benchmarking" class="level3">
+<h3 class="anchored" data-anchor-id="model-benchmarking">3. Model Benchmarking:</h3>
+<p>Another coding related blog post could be running similar models on the same dataset or several datasets.</p>
+<p><strong>Value to You:</strong> If there is a relatively new model that you are interested in, this could be a great way to contextualize the new model amongst models you are already familiar with.</p>
+<p><strong>Value to the Reader:</strong> This can be a great way to help readers get a feel for what models they should start with for a given problem.</p>
+</section>
+</section>
+<section id="additional-ideas" class="level2">
+<h2 class="anchored" data-anchor-id="additional-ideas">Additional Ideas:</h2>
+<ul>
+<li>First Thoughts with a new tool</li>
+<li>New Things I’ve Learned about a tool</li>
+<li>The Hows: How I did __ or How I used __ to do __ or How I built _ with __</li>
+<li>My First __ Project</li>
+</ul>
+
+
+</section>
+
+<a onclick="window.scrollTo(0, 0); return false;" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a> ]]></description>
+  <guid>https://cooper-richason.github.io/blog/posts/5- blog-post-ideas-for-data-scientists/</guid>
+  <pubDate>Mon, 14 Jul 2025 00:00:00 GMT</pubDate>
+</item>
 <item>
   <title>Deconstructing Decision Trees</title>
   <dc:creator>Cooper Richason</dc:creator>
