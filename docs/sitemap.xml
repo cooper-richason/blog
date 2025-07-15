@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://cooper-richason.github.io/blog/blog.html</loc>
-    <lastmod>2025-07-15T00:47:41.894Z</lastmod>
+    <lastmod>2025-07-15T01:38:44.768Z</lastmod>
   </url>
   <url>
     <loc>https://cooper-richason.github.io/blog/index.html</loc>
@@ -19,5 +19,13 @@
   <url>
     <loc>https://cooper-richason.github.io/blog/about.html</loc>
     <lastmod>2025-07-15T00:47:41.894Z</lastmod>
+  </url>
+  <url>
+    <loc>https://cooper-richason.github.io/blog/notes/template/index.html</loc>
+    <lastmod>2025-07-15T01:27:34.582Z</lastmod>
+  </url>
+  <url>
+    <loc>https://cooper-richason.github.io/blog/notes.html</loc>
+    <lastmod>2025-07-15T01:37:27.289Z</lastmod>
   </url>
 </urlset>

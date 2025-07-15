@@ -1,0 +1,11 @@
+---
+title: "Notes"
+draft: false
+listing:
+  contents: notes
+  type: table
+  categories: true
+  sort-ui: [title, date]
+  filter-ui: false
+---
+In an effort to share what I learn with others and give back to the community, I post notes that I take here if I think they will be of value to others.

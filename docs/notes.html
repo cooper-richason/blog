@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Data Discoveries – Cooper Richason</title>
+<title>Notes – Cooper Richason</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -79,9 +79,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      valueNames: ['listing-author',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-title-sort'] },{ data: ['listing-date-sort'] }],
       
-      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
+      searchColumns: ["listing-author"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -129,7 +129,7 @@ window.Quarto = {
 };
 </script>
 
-<link rel="alternate" type="application/rss+xml" title="Cooper Richason" href="blog.xml" data-external="1"><meta name="twitter:title" content="Data Discoveries – Cooper Richason">
+<meta name="twitter:title" content="Notes – Cooper Richason">
 <meta name="twitter:description" content="Data Science Blog and Portfolio">
 <meta name="twitter:creator" content="@DataCooper">
 <meta name="twitter:card" content="summary">
@@ -153,11 +153,11 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./blog.html" aria-current="page"> 
+    <a class="nav-link" href="./blog.html"> 
 <span class="menu-text">Posts</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./notes.html"> 
+    <a class="nav-link active" href="./notes.html" aria-current="page"> 
 <span class="menu-text">Notes</span></a>
   </li>  
   <li class="nav-item compact">
@@ -181,28 +181,25 @@ window.Quarto = {
 </div>
       </div> <!-- /container-fluid -->
     </nav>
-  <div id="quarto-announcement" data-announcement-id="32810d9c8a8cd9b1410e079da85dad5d" class="alert alert-primary hidden"><i class="bi bi-cone quarto-announcement-icon"></i><div class="quarto-announcement-content">
-<p><strong>Under Construction</strong>: Currently in the process of upgrading my site. Please excuse the mess!</p>
-</div><i class="bi bi-x-lg quarto-announcement-action"></i></div>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(2)</span></div><div class="category" data-category="RmFzdC5haQ==">Fast.ai <span class="quarto-category-count">(1)</span></div><div class="category" data-category="R3JhZGlv">Gradio <span class="quarto-category-count">(1)</span></div><div class="category" data-category="TWFjaGluZSUyMExlYXJuaW5n">Machine Learning <span class="quarto-category-count">(1)</span></div><div class="category" data-category="UHl0aG9u">Python <span class="quarto-category-count">(1)</span></div><div class="category" data-category="ZGVjaXNpb24lMjB0cmVlcw==">decision trees <span class="quarto-category-count">(1)</span></div><div class="category" data-category="dHJlZSUyMG1vZGVscw==">tree models <span class="quarto-category-count">(1)</span></div></div></div>
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(1)</span></div></div></div>
 <!-- main -->
-<main class="content column-page-left" id="quarto-document-content">
+<main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Data Discoveries</h1>
+<h1 class="title">Notes</h1>
 </div>
 
 
 
-<div class="quarto-title-meta column-page-left">
+<div class="quarto-title-meta">
 
     
   
@@ -214,92 +211,30 @@ window.Quarto = {
 </header>
 
 
-<p>I am a believer in sharing what you’ve learned, sometimes the hard way, with others so they can accelerate their learning and avoid the mistakes I made. Here, I aim to share everything I learn that might interest, benefit, or amuse others.</p>
+<p>In an effort to share what I learn with others and give back to the community, I post notes that I take here if I think they will be of value to others.</p>
 
 
 
 
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="dHJlZSUyMG1vZGVscyUyQ2RlY2lzaW9uJTIwdHJlZXM=" data-listing-date-sort="1752382800000" data-listing-file-modified-sort="1752540462023" data-listing-date-modified-sort="1752382800000" data-listing-reading-time-sort="4" data-listing-word-count-sort="800">
-<div class="thumbnail">
-<p><a href="./posts/4- Deconstructing Decision Trees/index.html" class="no-external"></a></p><a href="./posts/4- Deconstructing Decision Trees/index.html" class="no-external">
-<p class="card-img-top"><img src="posts/4- Deconstructing Decision Trees/default_header.png"  class="thumbnail-image card-img"/></p>
-</a><p><a href="./posts/4- Deconstructing Decision Trees/index.html" class="no-external"></a></p>
+<div class="quarto-listing quarto-listing-container-table" id="listing-listing">
+<div class="listing-actions-group">
 </div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/4- Deconstructing Decision Trees/index.html" class="no-external">Deconstructing Decision Trees</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/4- Deconstructing Decision Trees/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('dHJlZSUyMG1vZGVscw=='); return false;">
-tree models
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('ZGVjaXNpb24lMjB0cmVlcw=='); return false;">
-decision trees
-</div>
-</div>
-<div class="listing-description">
-<a href="./posts/4- Deconstructing Decision Trees/index.html" class="no-external">A beginner’s guide to using decision trees and how to use them</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/4- Deconstructing Decision Trees/index.html" class="no-external">
-<div class="listing-date">
-Jul 13, 2025
-</div>
-<div class="listing-author">
-Cooper Richason
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-categories="UHl0aG9uJTJDRmFzdC5haSUyQ01hY2hpbmUlMjBMZWFybmluZyUyQ0dyYWRpbw==" data-listing-date-sort="1701928800000" data-listing-file-modified-sort="1752540462001" data-listing-date-modified-sort="1702188000000" data-listing-reading-time-sort="5" data-listing-word-count-sort="940">
-<div class="thumbnail">
-<p><a href="./posts/1- Run or Fun/index.html" class="no-external"></a></p><a href="./posts/1- Run or Fun/index.html" class="no-external">
-<p class="card-img-top"><img src="posts/1- Run or Fun/header.jpg"  class="thumbnail-image card-img"/></p>
-</a><p><a href="./posts/1- Run or Fun/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/1- Run or Fun/index.html" class="no-external">My First Machine Learning Project: Fun or RUN</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/1- Run or Fun/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('UHl0aG9u'); return false;">
-Python
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('RmFzdC5haQ=='); return false;">
-Fast.ai
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('TWFjaGluZSUyMExlYXJuaW5n'); return false;">
-Machine Learning
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('R3JhZGlv'); return false;">
-Gradio
-</div>
-</div>
-<div class="listing-description">
-<a href="./posts/1- Run or Fun/index.html" class="no-external">Welcome to my latest adventure in the world of data science! I’ve recently started watching Jeremy Howard’s amazing lecture series on deep learning, Practical Deep Learning…</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/1- Run or Fun/index.html" class="no-external">
-<div class="listing-date">
-Dec 7, 2023
-</div>
-<div class="listing-author">
-Cooper Richason
-</div>
-</a>
-</div>
-</div>
-</div>
+<table class="quarto-listing-table table">
+<thead>
+<tr>
+<th>
+Author
+</th>
+</tr>
+</thead>
+<tbody class="list">
+<tr data-index="0" data-listing-file-modified-sort="1752542854582" data-listing-reading-time-sort="1" data-listing-word-count-sort="4" data-listing-filename-sort="index.qmd">
+<td>
+<span class="listing-author">&nbsp;</span>
+</td>
+</tr>
+</tbody>
+</table>
 <div class="listing-no-matching d-none">
 No matching items
 </div>
