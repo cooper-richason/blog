@@ -1,1 +1,1 @@
-Sitemap: https://cooper-richason.github.io/blog/sitemap.xml
+Sitemap: cooperrichason.com/sitemap.xml
