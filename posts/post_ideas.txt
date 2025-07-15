@@ -1,0 +1,12 @@
+General Ideas:
+
+- Model Overview
+- Model Walk Throughs
+- First Thoughts with a new tool
+- Comparing different models - theoretical
+- Benchmarking different models
+- New Things I’ve Learned about a tool
+- How I did __ 
+    or How I used __ to do _ 
+    or How I built _ with __
+- My First __ Project 

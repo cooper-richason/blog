@@ -1,0 +1,51 @@
+---
+title: Blog Post Ideas for Data Scientists
+author: Cooper Richason
+date: '2025-07-14'
+date-modified: '2025-07-14'
+categories: []
+draft: true
+toc: true
+---
+
+![](default_header.png)
+
+------------------------------------------------------------------------
+
+If you're a Data Scientists like me, you have been probably been given the advice of starting a blog. The only downside is that creating a blog is a lot of work! You have to build a website, come up with ideas for posts, write up something that is hopefully interesting and helpful, and share your work where it will be seen.
+
+I can't really help you with most of that, but I would love to share my homework on the kinds of content that you could share/write. 
+
+I'm going to mainly focus on content around sharing one's educational journey, but this ideas can be adapted to people of all skill sets.
+
+## General Ideas:
+
+### 1. Model Overview:
+Write up an article explaining how a model works. This could maybe be a quick overview or a deep dive depending on how much time you are willing to put into it.
+
+**Value to You:**  Forces you to deeply understand the algorithm, and demonstrates to others that you can breakdown complicated topics.
+
+**Value to the Reader:**  For readers who are unfamiliar with the model, a well written article could be help them grasp the fundamentals of the model and give them an intuition for how it works. For others, this could be a good article to refresh their knowledge.
+
+Examples:
+ -  [TSMixer: The Latest Forecasting Model by Google](https://medium.com/the-forecaster/tsmixer-the-latest-forecasting-model-by-google-2fd1e29a8ccb)
+
+### 2. Model Walkthrough:
+After writing up an article explain how a model theoretically works, some readers may want to dive a little deeper and learn how to actually implement that model. That's where sharing an accompanying article walking through actually using the model will come in handy. I also find that having skeleton projects set up the way I like to work can be really handy, so this could also be seen as a templating  effort to help yourself down the line.
+
+**Value to You: ** Re-enforces  your knowledge of the model and gives you the opportunity to sent up a project template for the future.
+
+**Value to the Reader: ** Shows them how to implement the model and gives them a easy way to tinker. 
+
+### 3. Model Benchmarking:
+Another coding related blog post could be running similar models on the same dataset or several datasets. 
+
+**Value to You: ** If there is a relatively new model that you are interested in, this could be a great way to contextualize the new model amongst models you are already familiar with.
+
+**Value to the Reader: **  This can be a great way to help readers get a feel for what models they should start with for a given problem.
+
+## Additional Ideas:
+- First Thoughts with a new tool
+- New Things I’ve Learned about a tool
+- The Hows: How I did __     or How I used __ to do __  or How I built _ with __
+- My First __ Project
