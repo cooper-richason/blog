@@ -2,12 +2,14 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.32">
+<meta name="generator" content="quarto-1.7.30">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Cooper Richason">
+<meta name="dcterms.date" content="2025-07-14">
 
-<title>Notes – Cooper Richason</title>
+<title>Unit 1 - Introduction – Cooper Richason</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,26 +25,24 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<link href="./favicon.png" rel="icon" type="image/png">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-f61c0153e6141a4419dceea513206985.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../../">
+<link href="../../../favicon.png" rel="icon" type="image/png">
+<script src="../../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-de070a7b0ab54f8780927367ac907214.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../site_libs/bootstrap/bootstrap-a74df5a947cca88e15fe48a68f659dd8.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -70,67 +70,9 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
 
-    const options = {
-      valueNames: ['listing-title','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
-      
-      searchColumns: ["listing-title","listing-author"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
-
-<link rel="alternate" type="application/rss+xml" title="Cooper Richason" href="notes.xml" data-external="1"><meta name="twitter:title" content="Notes – Cooper Richason">
+<meta name="twitter:title" content="Unit 1 - Introduction – Cooper Richason">
 <meta name="twitter:description" content="Data Science Blog and Portfolio">
 <meta name="twitter:creator" content="@DataCooper">
 <meta name="twitter:card" content="summary">
@@ -139,11 +81,11 @@ window.Quarto = {
 <body class="nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top">
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../../../index.html">
     <span class="navbar-title">Cooper Richason</span>
     </a>
   </div>
@@ -154,11 +96,11 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./blog.html"> 
+    <a class="nav-link" href="../../../blog.html"> 
 <span class="menu-text">Posts</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./notes.html" aria-current="page"> 
+    <a class="nav-link" href="../../../notes.html"> 
 <span class="menu-text">Notes</span></a>
   </li>  
   <li class="nav-item compact">
@@ -187,82 +129,125 @@ window.Quarto = {
 </div><i class="bi bi-x-lg quarto-announcement-action"></i></div>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">Unit 1 - Introduction</h1>
+                      </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p>Cooper Richason </p>
+            </div>
+    </div>
+      
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">July 14, 2025</p>
+      </div>
+    </div>
+    
+      <div>
+      <div class="quarto-title-meta-heading">Modified</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date-modified">July 14, 2025</p>
+      </div>
+    </div>
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
-    <div class="quarto-margin-footer"><div class="margin-footer-item">
-<p><br></p>
-</div></div></div>
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#what-is-an-agent" id="toc-what-is-an-agent" class="nav-link active" data-scroll-target="#what-is-an-agent">What is an Agent?</a></li>
+  <li><a href="#agents-and-llms" id="toc-agents-and-llms" class="nav-link" data-scroll-target="#agents-and-llms">Agents and LLMs</a></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/cooper-richason/blog/edit/main/notes/agents/basics/p1.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/cooper-richason/blog/blob/main/notes/agents/basics/p1.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></nav>
+    </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
-
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">Notes</h1>
-</div>
-
-
-
-<div class="quarto-title-meta">
-
-    
-  
-    
-  </div>
-  
-
-
-</header>
-
-
-<p>In an effort to share what I learn with others and give back to the community, I post notes that I take here if I think they will be of value to others.</p>
+<main class="content quarto-banner-title-block" id="quarto-document-content">
 
 
 
 
-<div class="quarto-listing quarto-listing-container-table" id="listing-listing">
-<table class="quarto-listing-table table">
-<thead>
-<tr>
 
-<th>
-Title
-</th>
+<p>Notes taken from <a href="https://huggingface.co/learn/agents-course/unit0/introduction">HuggingFace.co Agent Course</a>.</p>
+<section id="what-is-an-agent" class="level3">
+<h3 class="anchored" data-anchor-id="what-is-an-agent">What is an Agent?</h3>
+<ul>
+<li><p>Agents are systems that use AI models, typically a LLM, that uses the tools provided to it to execute tasks defined by the user.</p></li>
+<li><p>The brains of the operation is the AI model which uses its natural language abilities to take in the user’s instructions, reasons about what the user might want and plans how it can use the tools it has access to to meet the objective.</p></li>
+<li><p>Agents vary in how much “agency” they have:</p>
+<ol type="1">
+<li>Simple processors where their output doesn’t control the programs flow. (i.e.&nbsp;summarizing the outputs from a automated process)</li>
+<li>Router Agents where it just has basic controls over the program flow path</li>
+<li>Tool Calling Agents that can run a single tool</li>
+<li>Multi step agents that can sequence tools and chain their outputs together</li>
+<li>Multi-Agent systems where multiple agents work together to complete a tasks</li>
+</ol></li>
+<li><p>Since Agents are powered by LLMs, they can only really generate text. All of the other stuff they do is through the tools they use like generating images or making a graph through writing python code.</p></li>
+<li><p>Agents can do any tasks that a tool/function can be written to do:</p>
+<ul>
+<li><p>Make a graph</p></li>
+<li><p>Run SQL</p></li>
+<li><p>Send a slack message</p></li>
+<li><p>Write data to a Google Sheet</p></li>
+</ul></li>
+<li><p>This means that the design of the tools is really important and directly impacts what an agent can do and how well they do it</p></li>
+</ul>
+</section>
+<section id="agents-and-llms" class="level3">
+<h3 class="anchored" data-anchor-id="agents-and-llms">Agents and LLMs</h3>
+<ul>
+<li><p>LLMs are AI models that excel at understanding and generating human language</p></li>
+<li><p>Recent LLMs have been built on the Transformer architecture, a method pioneer by <a href="https://arxiv.org/abs/1810.04805">Google with BERT in 2018</a></p></li>
+</ul>
+<blockquote class="blockquote">
+<p>There are 3 types of transformers:</p>
+<ol type="1">
+<li><p><strong>Encoders</strong>: An encoder-based Transformer takes text (or other data) as input and outputs a dense representation (or embedding) of that text.</p>
+<ul>
+<li><p><strong>Example</strong>: BERT from Google</p></li>
+<li><p><strong>Use Cases</strong>: Text classification, semantic search, Named Entity Recognition</p></li>
+<li><p><strong>Typical Size</strong>: Millions of parameters</p></li>
+</ul></li>
+<li><p><strong>Decoders</strong>: A decoder-based Transformer focuses <strong>on generating new tokens to complete a sequence, one token at a time</strong>.</p>
+<ul>
+<li><p><strong>Example</strong>: Llama from Meta</p></li>
+<li><p><strong>Use Cases</strong>: Text generation, chatbots, code generation</p></li>
+<li><p><strong>Typical Size</strong>: Billions (in the US sense, i.e., 10^9) of parameters</p></li>
+</ul></li>
+<li><p><strong>Seq2Seq (Encoder–Decoder)</strong> - A sequence-to-sequence Transformer <em>combines</em> an encoder and a decoder. The encoder first processes the input sequence into a context representation, then the decoder generates an output sequence.</p>
+<ul>
+<li><p><strong>Example</strong>: T5, BART</p></li>
+<li><p><strong>Use Cases</strong>: Translation, Summarization, Paraphrasing</p></li>
+<li><p><strong>Typical Size</strong>: Millions of parameters</p></li>
+</ul>
+<p>From <a href="https://huggingface.co/learn/agents-course/unit1/what-are-llms#what-is-a-large-language-model">HuggingFace.co</a></p></li>
+</ol>
+</blockquote>
+<ul>
+<li><p>The most common approach for LLMS is to use decoders, so they generate text one token at a time</p></li>
+<li><p>That means in order to get more than just a character or word fragment out of a model, the models need to pass the “autoregress”, aka pass the output back in as part of the input. Models keep doing this until they hit a special token to stop.</p></li>
+<li></li>
+</ul>
 
-<th>
-Description
-</th>
 
-</tr>
-</thead>
-<tbody class="list">
+</section>
 
-<tr data-index="0" data-listing-file-modified-sort="1753733669519" data-listing-reading-time-sort="1" data-listing-word-count-sort="1" data-listing-title-sort="Agents" data-listing-filename-sort="index.qmd">
-<td>
-<a href="./notes/agents/index.html" class="title listing-title">Agents</a>
-</td>
-<td>
-<span class="listing-description">Notes on Agents</span>
-</td>
-
-</tr>
-
-<tr data-index="1" data-listing-file-modified-sort="1753733669519" data-listing-reading-time-sort="1" data-listing-word-count-sort="1" data-listing-title-sort="LLMs" data-listing-filename-sort="index.qmd">
-<td>
-<a href="./notes/llms/index.html" class="title listing-title">LLMs</a>
-</td>
-<td>
-<span class="listing-description">Notes on Large Language Models</span>
-</td>
-
-</tr>
-
-</tbody>
-</table>
-<div class="listing-no-matching d-none">No matching items</div>
-</div><a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
+<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
@@ -670,7 +655,7 @@ Description
 </div>   
     <div class="nav-footer-center">
       &nbsp;
-    <div class="toc-actions"><ul><li><a href="https://github.com/cooper-richason/blog/edit/main/notes.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/cooper-richason/blog/blob/main/notes.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/cooper-richason/blog/edit/main/notes/agents/basics/p1.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/cooper-richason/blog/blob/main/notes/agents/basics/p1.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></div>
     <div class="nav-footer-right">
       <ul class="footer-items list-unstyled">
     <li class="nav-item compact">
@@ -686,7 +671,7 @@ Description
     </a>
   </li>  
     <li class="nav-item compact">
-    <a class="nav-link" href="./index.xml">
+    <a class="nav-link" href="../../../index.xml">
       <i class="bi bi-rss" role="img">
 </i> 
     </a>
