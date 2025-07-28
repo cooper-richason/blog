@@ -2,15 +2,50 @@
   {
     "listing": "/blog.html",
     "items": [
+      "/posts/6- how-i-use-streamlit/index.html",
       "/posts/5- blog-post-ideas-for-data-scientists/index.html",
       "/posts/4- Deconstructing Decision Trees/index.html",
-      "/posts/1- Run or Fun/index.html"
+      "/posts/3- Appreciation Post for Notebooks/index.html",
+      "/posts/2- How I use Deepnote to be 10x More Productive/index.html",
+      "/posts/1- Run or Fun/index.html",
+      "/posts/template/index.html"
     ]
   },
   {
     "listing": "/notes.html",
     "items": [
-      "/notes/template/index.html"
+      "/notes/agents/index.html",
+      "/notes/llms/index.html"
+    ]
+  },
+  {
+    "listing": "/notes/agents/basics/index.html",
+    "items": [
+      "/notes/agents/basics/p1.html"
+    ]
+  },
+  {
+    "listing": "/notes/agents/index.html",
+    "items": [
+      "/notes/agents/huggingface-course/index.html"
+    ]
+  },
+  {
+    "listing": "/notes/llms/index.html",
+    "items": [
+      "/notes/llms/huggingface-course/index.html"
+    ]
+  },
+  {
+    "listing": "/notes/llms/huggingface-course/index.html",
+    "items": [
+      "/notes/llms/huggingface-course/p1.html"
+    ]
+  },
+  {
+    "listing": "/notes/agents/huggingface-course/index.html",
+    "items": [
+      "/notes/agents/huggingface-course/p1.html"
     ]
   }
 ]

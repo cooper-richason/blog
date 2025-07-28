@@ -1,0 +1,81 @@
+---
+title: "Unit 1 - Introduction"
+author: Cooper Richason
+date: '2025-07-14'
+date-modified: '2025-07-14'
+categories: []
+draft: false
+toc: true
+---
+
+Notes taken from [HuggingFace.co Agent Course](https://huggingface.co/learn/agents-course/unit0/introduction).
+
+### What is an Agent?
+
+-   Agents are systems that use AI models, typically a LLM, that uses the tools provided to it to execute tasks defined by the user.
+
+-   The brains of the operation is the AI model which uses its natural language abilities to take in the user's instructions, reasons about what the user might want and plans how it can use the tools it has access to to meet the objective.
+
+-   Agents vary in how much "agency" they have:
+
+    1.  Simple processors where their output doesn't control the programs flow. (i.e. summarizing the outputs from a automated process)
+    2.  Router Agents where it just has basic controls over the program flow path
+    3.  Tool Calling Agents that can run a single tool
+    4.  Multi step agents that can sequence tools and chain their outputs together
+    5.  Multi-Agent systems where multiple agents work together to complete a tasks
+
+-   Since Agents are powered by LLMs, they can only really generate text. All of the other stuff they do is through the tools they use like generating images or making a graph through writing python code.
+
+-   Agents can do any tasks that a tool/function can be written to do:
+
+    -   Make a graph
+
+    -   Run SQL
+
+    -   Send a slack message
+
+    -   Write data to a Google Sheet
+
+-   This means that the design of the tools is really important and directly impacts what an agent can do and how well they do it
+
+### Agents and LLMs
+
+-   LLMs are AI models that excel at understanding and generating human language
+
+-   Recent LLMs have been built on the Transformer architecture, a method pioneer by [Google with BERT in 2018](https://arxiv.org/abs/1810.04805)
+
+> There are 3 types of transformers:
+>
+> 1.  **Encoders**: An encoder-based Transformer takes text (or other data) as input and outputs a dense representation (or embedding) of that text.
+>
+>     -   **Example**: BERT from Google
+>
+>     -   **Use Cases**: Text classification, semantic search, Named Entity Recognition
+>
+>     -   **Typical Size**: Millions of parameters
+>
+> 2.  **Decoders**: A decoder-based Transformer focuses **on generating new tokens to complete a sequence, one token at a time**.
+>
+>     -   **Example**: Llama from Meta
+>
+>     -   **Use Cases**: Text generation, chatbots, code generation
+>
+>     -   **Typical Size**: Billions (in the US sense, i.e., 10\^9) of parameters
+>
+> 3.  **Seq2Seq (Encoder–Decoder)** - A sequence-to-sequence Transformer *combines* an encoder and a
+>     decoder. The encoder first processes the input sequence into a context
+>     representation, then the decoder generates an output sequence.
+>
+>     -   **Example**: T5, BART
+>
+>     -   **Use Cases**: Translation, Summarization, Paraphrasing
+>
+>     -   **Typical Size**: Millions of parameters
+>
+>     From [HuggingFace.co](https://huggingface.co/learn/agents-course/unit1/what-are-llms#what-is-a-large-language-model)
+
+-   The most common approach for LLMS is to use decoders, so they generate text one token at a time
+
+-   That means in order to get more than just a character or word fragment out of a model, the models need to pass the "autoregress", aka pass the output back in as part of the input. Models keep doing this until they hit a special token to stop.
+
+-

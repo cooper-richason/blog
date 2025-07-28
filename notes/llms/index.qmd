@@ -1,0 +1,11 @@
+---
+title: LLMs
+description: Notes on Large Language Models
+metadata-files: ["../_listing_meta.yml"]
+listing:
+  contents: 
+   - "/*.ipynb"
+   - "/*.qmd"
+   - "/*/index.qmd"
+margin-footer: <br>
+---

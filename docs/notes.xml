@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss  xmlns:atom="http://www.w3.org/2005/Atom" 
+      xmlns:media="http://search.yahoo.com/mrss/" 
+      xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+      xmlns:dc="http://purl.org/dc/elements/1.1/" 
+      version="2.0">
+<channel>
+<title>Cooper Richason</title>
+<link>cooperrichason.com/notes.html</link>
+<atom:link href="cooperrichason.com/notes.xml" rel="self" type="application/rss+xml"/>
+<description>Data Science Blog and Portfolio</description>
+<generator>quarto-1.7.30</generator>
+<lastBuildDate>Fri, 18 Jul 2025 18:17:10 GMT</lastBuildDate>
+<item>
+  <title>Agents</title>
+  <link>cooperrichason.com/notes/agents/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+
+
+
+
+<div class="quarto-listing quarto-listing-container-table" id="listing-listing">
+<table class="quarto-listing-table table">
+<thead>
+<tr>
+
+<th>
+Title
+</th>
+
+<th>
+Description
+</th>
+
+</tr>
+</thead>
+<tbody class="list">
+
+<tr data-index="0" data-listing-file-modified-sort="1752855718735" data-listing-reading-time-sort="1" data-listing-word-count-sort="1" data-listing-title-sort="HuggingFace.co Course" data-listing-filename-sort="index.qmd">
+<td>
+<a href="../../notes/agents/huggingface-course/index.html" class="title listing-title">HuggingFace.co Course</a>
+</td>
+<td>
+<span class="listing-description">Notes taken during while working through the…</span>
+</td>
+
+</tr>
+
+</tbody>
+</table>
+<div class="listing-no-matching d-none">No matching items</div>
+</div><a onclick="window.scrollTo(0, 0); return false;" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a> ]]></description>
+  <guid>cooperrichason.com/notes/agents/</guid>
+  <pubDate>Fri, 18 Jul 2025 18:17:10 GMT</pubDate>
+</item>
+<item>
+  <title>LLMs</title>
+  <link>cooperrichason.com/notes/llms/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+
+
+
+
+<div class="quarto-listing quarto-listing-container-table" id="listing-listing">
+<table class="quarto-listing-table table">
+<thead>
+<tr>
+
+<th>
+Title
+</th>
+
+<th>
+Description
+</th>
+
+</tr>
+</thead>
+<tbody class="list">
+
+<tr data-index="0" data-listing-file-modified-sort="1752856630877" data-listing-reading-time-sort="1" data-listing-word-count-sort="1" data-listing-title-sort="HuggingFace.co Course" data-listing-filename-sort="index.qmd">
+<td>
+<a href="../../notes/llms/huggingface-course/index.html" class="title listing-title">HuggingFace.co Course</a>
+</td>
+<td>
+<span class="listing-description">Notes taken during while working through the…</span>
+</td>
+
+</tr>
+
+</tbody>
+</table>
+<div class="listing-no-matching d-none">No matching items</div>
+</div><a onclick="window.scrollTo(0, 0); return false;" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a> ]]></description>
+  <guid>cooperrichason.com/notes/llms/</guid>
+  <pubDate>Fri, 18 Jul 2025 18:17:10 GMT</pubDate>
+</item>
+</channel>
+</rss>

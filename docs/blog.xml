@@ -9,8 +9,16 @@
 <link>cooperrichason.com/blog.html</link>
 <atom:link href="cooperrichason.com/blog.xml" rel="self" type="application/rss+xml"/>
 <description>Data Science Blog and Portfolio</description>
-<generator>quarto-1.6.42</generator>
+<generator>quarto-1.7.30</generator>
 <lastBuildDate>Mon, 14 Jul 2025 05:00:00 GMT</lastBuildDate>
+<item>
+  <title></title>
+  <dc:creator>Cooper Richason</dc:creator>
+  <link>cooperrichason.com/posts/6- how-i-use-streamlit/</link>
+  <description><![CDATA[ undefined ]]></description>
+  <guid>cooperrichason.com/posts/6- how-i-use-streamlit/</guid>
+  <pubDate>Mon, 14 Jul 2025 05:00:00 GMT</pubDate>
+</item>
 <item>
   <title>Blog Post Ideas for Data Scientists</title>
   <dc:creator>Cooper Richason</dc:creator>
@@ -145,6 +153,22 @@
   <category>decision trees</category>
   <guid>cooperrichason.com/posts/4- Deconstructing Decision Trees/</guid>
   <pubDate>Sun, 13 Jul 2025 05:00:00 GMT</pubDate>
+</item>
+<item>
+  <title></title>
+  <dc:creator>Cooper Richason</dc:creator>
+  <link>cooperrichason.com/posts/3- Appreciation Post for Notebooks/</link>
+  <description><![CDATA[ undefined ]]></description>
+  <guid>cooperrichason.com/posts/3- Appreciation Post for Notebooks/</guid>
+  <pubDate>Wed, 26 Mar 2025 05:00:00 GMT</pubDate>
+</item>
+<item>
+  <title></title>
+  <dc:creator>Cooper Richason</dc:creator>
+  <link>cooperrichason.com/posts/2- How I use Deepnote to be 10x More Productive/</link>
+  <description><![CDATA[ undefined ]]></description>
+  <guid>cooperrichason.com/posts/2- How I use Deepnote to be 10x More Productive/</guid>
+  <pubDate>Wed, 26 Mar 2025 05:00:00 GMT</pubDate>
 </item>
 <item>
   <title>My First Machine Learning Project: Fun or RUN</title>
@@ -498,6 +522,14 @@ font-style: inherit;">=</span> gr.themes.Base())</span>
   <category>Machine Learning</category>
   <category>Gradio</category>
   <guid>cooperrichason.com/posts/1- Run or Fun/</guid>
+  <pubDate>Thu, 07 Dec 2023 06:00:00 GMT</pubDate>
+</item>
+<item>
+  <title></title>
+  <dc:creator>Cooper Richason</dc:creator>
+  <link>cooperrichason.com/posts/template/</link>
+  <description><![CDATA[ undefined ]]></description>
+  <guid>cooperrichason.com/posts/template/</guid>
   <pubDate>Thu, 07 Dec 2023 06:00:00 GMT</pubDate>
 </item>
 </channel>

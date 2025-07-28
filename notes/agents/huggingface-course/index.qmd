@@ -1,0 +1,5 @@
+---
+title: HuggingFace.co Course
+description: Notes taken during while working through the [course HuggingFace](https://huggingface.co/learn/agents-course/unit0/introduction) offers.
+metadata-files: ["../../_listing_meta.yml"]
+---

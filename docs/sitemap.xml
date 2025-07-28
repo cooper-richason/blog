@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>cooperrichason.com/blog.html</loc>
-    <lastmod>2025-07-15T01:38:44.768Z</lastmod>
+    <lastmod>2025-07-17T21:21:20.574Z</lastmod>
   </url>
   <url>
     <loc>cooperrichason.com/about.html</loc>
@@ -18,18 +18,50 @@
   </url>
   <url>
     <loc>cooperrichason.com/notes.html</loc>
-    <lastmod>2025-07-15T01:37:27.289Z</lastmod>
+    <lastmod>2025-07-18T18:17:09.432Z</lastmod>
   </url>
   <url>
     <loc>cooperrichason.com/posts/5- blog-post-ideas-for-data-scientists/index.html</loc>
-    <lastmod>2025-07-15T04:27:56.407Z</lastmod>
+    <lastmod>2025-07-17T21:21:20.642Z</lastmod>
   </url>
   <url>
     <loc>cooperrichason.com/index.html</loc>
-    <lastmod>2025-07-15T00:47:41.979Z</lastmod>
+    <lastmod>2025-07-17T21:21:20.611Z</lastmod>
   </url>
   <url>
     <loc>cooperrichason.com/notes/template/index.html</loc>
     <lastmod>2025-07-15T01:27:34.582Z</lastmod>
+  </url>
+  <url>
+    <loc>cooperrichason.com/notes/agents/basics/index.html</loc>
+    <lastmod>2025-07-18T16:21:58.735Z</lastmod>
+  </url>
+  <url>
+    <loc>cooperrichason.com/notes/agents/index.html</loc>
+    <lastmod>2025-07-17T21:33:35.210Z</lastmod>
+  </url>
+  <url>
+    <loc>cooperrichason.com/notes/agents/basics/p1.html</loc>
+    <lastmod>2025-07-18T16:22:33.495Z</lastmod>
+  </url>
+  <url>
+    <loc>cooperrichason.com/notes/llms/index.html</loc>
+    <lastmod>2025-07-18T16:37:32.899Z</lastmod>
+  </url>
+  <url>
+    <loc>cooperrichason.com/notes/llms/huggingface-course/index.html</loc>
+    <lastmod>2025-07-18T16:37:10.877Z</lastmod>
+  </url>
+  <url>
+    <loc>cooperrichason.com/notes/agents/huggingface-course/index.html</loc>
+    <lastmod>2025-07-18T16:21:58.735Z</lastmod>
+  </url>
+  <url>
+    <loc>cooperrichason.com/notes/agents/huggingface-course/p1.html</loc>
+    <lastmod>2025-07-18T16:22:33.495Z</lastmod>
+  </url>
+  <url>
+    <loc>cooperrichason.com/notes/llms/huggingface-course/p1.html</loc>
+    <lastmod>2025-07-18T16:37:10.877Z</lastmod>
   </url>
 </urlset>
