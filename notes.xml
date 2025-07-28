@@ -6,14 +6,14 @@
       version="2.0">
 <channel>
 <title>Cooper Richason</title>
-<link>cooperrichason.com/notes.html</link>
-<atom:link href="cooperrichason.com/notes.xml" rel="self" type="application/rss+xml"/>
+<link>https://cooper-richason.github.io/blog/notes.html</link>
+<atom:link href="https://cooper-richason.github.io/blog/notes.xml" rel="self" type="application/rss+xml"/>
 <description>Data Science Blog and Portfolio</description>
 <generator>quarto-1.7.32</generator>
-<lastBuildDate>Mon, 28 Jul 2025 20:14:42 GMT</lastBuildDate>
+<lastBuildDate>Mon, 28 Jul 2025 20:18:24 GMT</lastBuildDate>
 <item>
   <title>Agents</title>
-  <link>cooperrichason.com/notes/agents/</link>
+  <link>https://cooper-richason.github.io/blog/notes/agents/</link>
   <description><![CDATA[ 
 
 
@@ -41,7 +41,7 @@ Description
 </thead>
 <tbody class="list">
 
-<tr data-index="0" data-listing-file-modified-sort="1753733669519" data-listing-reading-time-sort="1" data-listing-word-count-sort="1" data-listing-title-sort="HuggingFace.co Course" data-listing-filename-sort="index.qmd">
+<tr data-index="0" data-listing-file-modified-sort="1753733888611" data-listing-reading-time-sort="1" data-listing-word-count-sort="1" data-listing-title-sort="HuggingFace.co Course" data-listing-filename-sort="index.qmd">
 <td>
 <a href="../../notes/agents/huggingface-course/index.html" class="title listing-title">HuggingFace.co Course</a>
 </td>
@@ -55,12 +55,12 @@ Description
 </table>
 <div class="listing-no-matching d-none">No matching items</div>
 </div><a onclick="window.scrollTo(0, 0); return false;" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a> ]]></description>
-  <guid>cooperrichason.com/notes/agents/</guid>
-  <pubDate>Mon, 28 Jul 2025 20:14:42 GMT</pubDate>
+  <guid>https://cooper-richason.github.io/blog/notes/agents/</guid>
+  <pubDate>Mon, 28 Jul 2025 20:18:24 GMT</pubDate>
 </item>
 <item>
   <title>LLMs</title>
-  <link>cooperrichason.com/notes/llms/</link>
+  <link>https://cooper-richason.github.io/blog/notes/llms/</link>
   <description><![CDATA[ 
 
 
@@ -88,7 +88,7 @@ Description
 </thead>
 <tbody class="list">
 
-<tr data-index="0" data-listing-file-modified-sort="1753733669519" data-listing-reading-time-sort="1" data-listing-word-count-sort="1" data-listing-title-sort="HuggingFace.co Course" data-listing-filename-sort="index.qmd">
+<tr data-index="0" data-listing-file-modified-sort="1753733888612" data-listing-reading-time-sort="1" data-listing-word-count-sort="1" data-listing-title-sort="HuggingFace.co Course" data-listing-filename-sort="index.qmd">
 <td>
 <a href="../../notes/llms/huggingface-course/index.html" class="title listing-title">HuggingFace.co Course</a>
 </td>
@@ -102,8 +102,8 @@ Description
 </table>
 <div class="listing-no-matching d-none">No matching items</div>
 </div><a onclick="window.scrollTo(0, 0); return false;" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a> ]]></description>
-  <guid>cooperrichason.com/notes/llms/</guid>
-  <pubDate>Mon, 28 Jul 2025 20:14:42 GMT</pubDate>
+  <guid>https://cooper-richason.github.io/blog/notes/llms/</guid>
+  <pubDate>Mon, 28 Jul 2025 20:18:24 GMT</pubDate>
 </item>
 </channel>
 </rss>

@@ -71,7 +71,7 @@ ul.task-list li input[type="checkbox"] {
 
 <meta name="twitter:title" content="About – Cooper Richason">
 <meta name="twitter:description" content="Data Science Blog and Portfolio">
-<meta name="twitter:image" content="cooperrichason.com/profile_image.JPG">
+<meta name="twitter:image" content="https://cooper-richason.github.io/blog/profile_image.JPG">
 <meta name="twitter:creator" content="@DataCooper">
 <meta name="twitter:card" content="summary">
 </head>
@@ -229,7 +229,7 @@ ul.task-list li input[type="checkbox"] {
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp("cooperrichason\.com");
+        var filterRegex = new RegExp("https:\/\/cooper-richason\.github\.io\/blog\/");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }

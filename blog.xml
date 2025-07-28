@@ -6,22 +6,22 @@
       version="2.0">
 <channel>
 <title>Cooper Richason</title>
-<link>cooperrichason.com/blog.html</link>
-<atom:link href="cooperrichason.com/blog.xml" rel="self" type="application/rss+xml"/>
+<link>https://cooper-richason.github.io/blog/blog.html</link>
+<atom:link href="https://cooper-richason.github.io/blog/blog.xml" rel="self" type="application/rss+xml"/>
 <description>Data Science Blog and Portfolio</description>
 <generator>quarto-1.7.32</generator>
 <lastBuildDate>Mon, 14 Jul 2025 00:00:00 GMT</lastBuildDate>
 <item>
   <title>Blog Post Ideas for Data Scientists</title>
   <dc:creator>Cooper Richason</dc:creator>
-  <link>cooperrichason.com/posts/5- blog-post-ideas-for-data-scientists/</link>
+  <link>https://cooper-richason.github.io/blog/posts/5- blog-post-ideas-for-data-scientists/</link>
   <description><![CDATA[ 
 
 
 
 
 
-<p><img src="cooperrichason.com/posts/5- blog-post-ideas-for-data-scientists/default_header.png" class="img-fluid"></p>
+<p><img src="https://cooper-richason.github.io/blog/posts/5- blog-post-ideas-for-data-scientists/default_header.png" class="img-fluid"></p>
 <hr>
 <p>If you’re a Data Scientists like me, you have been probably been given the advice of starting a blog. The only downside is that creating a blog is a lot of work! You have to build a website, come up with ideas for posts, write up something that is hopefully interesting and helpful, and share your work where it will be seen.</p>
 <p>I can’t really help you with most of that, but I would love to share my homework on the kinds of content that you could share/write.</p>
@@ -61,20 +61,20 @@
 </section>
 
 <a onclick="window.scrollTo(0, 0); return false;" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a> ]]></description>
-  <guid>cooperrichason.com/posts/5- blog-post-ideas-for-data-scientists/</guid>
+  <guid>https://cooper-richason.github.io/blog/posts/5- blog-post-ideas-for-data-scientists/</guid>
   <pubDate>Mon, 14 Jul 2025 00:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Deconstructing Decision Trees</title>
   <dc:creator>Cooper Richason</dc:creator>
-  <link>cooperrichason.com/posts/4- Deconstructing Decision Trees/</link>
+  <link>https://cooper-richason.github.io/blog/posts/4- Deconstructing Decision Trees/</link>
   <description><![CDATA[ 
 
 
 
 
 
-<p><img src="cooperrichason.com/posts/4- Deconstructing Decision Trees/default_header.png" class="img-fluid"></p>
+<p><img src="https://cooper-richason.github.io/blog/posts/4- Deconstructing Decision Trees/default_header.png" class="img-fluid"></p>
 <hr>
 <p>I first learned about decision trees when I took Jeremy Howard’s incredible deep learning course, <a href="https://course.fast.ai/">Practical Deep Learning for Coders</a> in 2023, Jeremy made such a convincing argument in favor of using decision trees, especially as model when starting project, because of the benefits they offer:</p>
 <ol type="1">
@@ -143,20 +143,20 @@
 <a onclick="window.scrollTo(0, 0); return false;" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a> ]]></description>
   <category>tree models</category>
   <category>decision trees</category>
-  <guid>cooperrichason.com/posts/4- Deconstructing Decision Trees/</guid>
+  <guid>https://cooper-richason.github.io/blog/posts/4- Deconstructing Decision Trees/</guid>
   <pubDate>Sun, 13 Jul 2025 00:00:00 GMT</pubDate>
 </item>
 <item>
   <title>My First Machine Learning Project: Fun or RUN</title>
   <dc:creator>Cooper Richason</dc:creator>
-  <link>cooperrichason.com/posts/1- Run or Fun/</link>
+  <link>https://cooper-richason.github.io/blog/posts/1- Run or Fun/</link>
   <description><![CDATA[ 
 
 
 
 
 
-<p><img src="cooperrichason.com/posts/1- Run or Fun/header.jpg" class="img-fluid"></p>
+<p><img src="https://cooper-richason.github.io/blog/posts/1- Run or Fun/header.jpg" class="img-fluid"></p>
 <hr>
 <p>Welcome to my latest adventure in the world of data science! I’ve recently started watching Jeremy Howard’s amazing lecture series on deep learning, <a href="https://course.fast.ai">Practical Deep Learning for Coders</a>, and I’ve been feeling very inspired by Jeremy to play around with deep learning and simply try things.</p>
 <p>For my first deep learning project, I decided to create an image classifier, since Jermey had several examples on these, and I eventually landed on the idea of a movie poster classifier! My goals with this project are to:</p>
@@ -497,7 +497,7 @@ font-style: inherit;">=</span> gr.themes.Base())</span>
   <category>Fast.ai</category>
   <category>Machine Learning</category>
   <category>Gradio</category>
-  <guid>cooperrichason.com/posts/1- Run or Fun/</guid>
+  <guid>https://cooper-richason.github.io/blog/posts/1- Run or Fun/</guid>
   <pubDate>Thu, 07 Dec 2023 00:00:00 GMT</pubDate>
 </item>
 </channel>
