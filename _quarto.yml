@@ -4,7 +4,7 @@ project:
 
 website:
   title: "Cooper Richason"
-  site-url: "cooperrichason.com"
+  site-url: "https://cooper-richason.github.io/blog/"
   description: "Data Science Blog and Portfolio"
   favicon: favicon.png
   navbar:
