@@ -40,6 +40,13 @@ website:
     content: "**Under Construction**: Currently in the process of upgrading my site. Please excuse the mess!"
     type: primary
     position: below-navbar
+  sidebar:
+    id: "notes-sidebar"
+    style: "docked"
+    title: "Notes"
+    contents: notes/
+    collapse-level: 3
+    foreground: dark
 
 format:
   html:

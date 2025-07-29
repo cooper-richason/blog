@@ -2,8 +2,7 @@
 id: notes
 title: "Notes"
 search: false
-sidebar:
-  contents: notes/*
+sidebar: notes-sidebar
 margin-footer: <br>
 metadata-files: ["notes/_listing_meta.yml"]
 listing:
@@ -12,4 +11,5 @@ listing:
    - "notes/*/index.qmd"
   feed: true
 ---
+
 In an effort to share what I learn with others and give back to the community, I post notes that I take here if I think they will be of value to others.

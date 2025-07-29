@@ -17,6 +17,15 @@ div.sourceCode {
     padding-bottom: 10px; 
 }
 
+.breadcrumb {
+    background-color: var(--quarto-scss-export-navbar-bg) !important;
+    box-shadow: none ! important;
+}
+
+.quarto-title-breadcrumbs .breadcrumb li:last-of-type a {
+    color: #f0f5fa !important;
+  }
+
 // Adding more padding to paragraph text
 p {
     margin-top: 2rem;
