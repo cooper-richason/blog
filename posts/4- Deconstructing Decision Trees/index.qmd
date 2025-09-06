@@ -17,7 +17,7 @@ toc: true
 
 I first learned about decision trees when I took Jeremy Howard's incredible deep learning course, [Practical Deep Learning for Coders](https://course.fast.ai/) in 2023, Jeremy made such a convincing argument in favor of using decision trees, especially as model when starting project, because of the benefits they offer:
 
-1.  **They are interoperable** - It is very easy to understand why a decision is made and what are the most important factors in making a decision. This can be really valuable if you need to be able to explain how decision are made to stakeholders, but even if you don't end up using a tree model as your final product, starting with can be invaluable when one is starting a project and needs to get a feel for the data and experiment with with features.
+1.  **They are interpretable** - It is very easy to understand why a decision is made and what are the most important factors in making a decision. This can be really valuable if you need to be able to explain how decision are made to stakeholders, but even if you don't end up using a tree model as your final product, starting with can be invaluable when one is starting a project and needs to get a feel for the data and experiment with with features.
 
 2.  **They are robust** -- Unlike other models like logistic regression, tree based models are do not require data normalization, can handle missing values, and they can handle both categorical and numerical features with ease.
 
