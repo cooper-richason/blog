@@ -1,8 +1,10 @@
 [
   {
-    "listing": "/notes/llms/index.html",
+    "listing": "/blog.html",
     "items": [
-      "/notes/llms/huggingface-course/index.html"
+      "/posts/5- blog-post-ideas-for-data-scientists/index.html",
+      "/posts/4- Deconstructing Decision Trees/index.html",
+      "/posts/1- Run or Fun/index.html"
     ]
   },
   {
@@ -12,18 +14,15 @@
     ]
   },
   {
-    "listing": "/blog.html",
+    "listing": "/notes/llms/index.html",
     "items": [
-      "/posts/5- blog-post-ideas-for-data-scientists/index.html",
-      "/posts/4- Deconstructing Decision Trees/index.html",
-      "/posts/1- Run or Fun/index.html"
+      "/notes/llms/huggingface-course/index.html"
     ]
   },
   {
-    "listing": "/notes.html",
+    "listing": "/notes/agents/index.html",
     "items": [
-      "/notes/agents/index.html",
-      "/notes/llms/index.html"
+      "/notes/agents/huggingface-course/index.html"
     ]
   },
   {
@@ -33,9 +32,10 @@
     ]
   },
   {
-    "listing": "/notes/agents/index.html",
+    "listing": "/notes.html",
     "items": [
-      "/notes/agents/huggingface-course/index.html"
+      "/notes/agents/index.html",
+      "/notes/llms/index.html"
     ]
   }
 ]

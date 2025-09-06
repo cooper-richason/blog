@@ -9,7 +9,7 @@
 <link>https://cooper-richason.github.io/blog/blog.html</link>
 <atom:link href="https://cooper-richason.github.io/blog/blog.xml" rel="self" type="application/rss+xml"/>
 <description>Data Science Blog and Portfolio</description>
-<generator>quarto-1.7.32</generator>
+<generator>quarto-1.7.34</generator>
 <lastBuildDate>Mon, 14 Jul 2025 00:00:00 GMT</lastBuildDate>
 <item>
   <title>Blog Post Ideas for Data Scientists</title>
@@ -78,7 +78,7 @@
 <hr>
 <p>I first learned about decision trees when I took Jeremy Howard’s incredible deep learning course, <a href="https://course.fast.ai/">Practical Deep Learning for Coders</a> in 2023, Jeremy made such a convincing argument in favor of using decision trees, especially as model when starting project, because of the benefits they offer:</p>
 <ol type="1">
-<li><p><strong>They are interoperable</strong> - It is very easy to understand why a decision is made and what are the most important factors in making a decision. This can be really valuable if you need to be able to explain how decision are made to stakeholders, but even if you don’t end up using a tree model as your final product, starting with can be invaluable when one is starting a project and needs to get a feel for the data and experiment with with features.</p></li>
+<li><p><strong>They are interpretable</strong> - It is very easy to understand why a decision is made and what are the most important factors in making a decision. This can be really valuable if you need to be able to explain how decision are made to stakeholders, but even if you don’t end up using a tree model as your final product, starting with can be invaluable when one is starting a project and needs to get a feel for the data and experiment with with features.</p></li>
 <li><p><strong>They are robust</strong> – Unlike other models like logistic regression, tree based models are do not require data normalization, can handle missing values, and they can handle both categorical and numerical features with ease.</p></li>
 <li><p><strong>They are quick to build</strong> – Because of there robust nature and how simple they are under the hood, one doesn’t need to do a bunch of leg work before one can get a model running.</p></li>
 </ol>

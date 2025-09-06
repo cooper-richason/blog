@@ -1,55 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://cooper-richason.github.io/blog/posts/4- Deconstructing Decision Trees/index.html</loc>
-    <lastmod>2025-07-29T21:08:21.275Z</lastmod>
-  </url>
-  <url>
-    <loc>https://cooper-richason.github.io/blog/posts/5- blog-post-ideas-for-data-scientists/index.html</loc>
-    <lastmod>2025-07-29T21:08:21.281Z</lastmod>
-  </url>
-  <url>
-    <loc>https://cooper-richason.github.io/blog/notes/agents/huggingface-course/p1.html</loc>
-    <lastmod>2025-07-29T21:08:21.240Z</lastmod>
-  </url>
-  <url>
-    <loc>https://cooper-richason.github.io/blog/notes/llms/index.html</loc>
-    <lastmod>2025-07-29T21:08:21.240Z</lastmod>
-  </url>
-  <url>
-    <loc>https://cooper-richason.github.io/blog/notes/llms/huggingface-course/index.html</loc>
-    <lastmod>2025-07-29T21:08:21.240Z</lastmod>
+    <loc>https://cooper-richason.github.io/blog/blog.html</loc>
+    <lastmod>2025-09-06T00:47:07.804Z</lastmod>
   </url>
   <url>
     <loc>https://cooper-richason.github.io/blog/about.html</loc>
-    <lastmod>2025-07-29T21:08:21.202Z</lastmod>
+    <lastmod>2025-09-06T00:47:07.804Z</lastmod>
   </url>
   <url>
-    <loc>https://cooper-richason.github.io/blog/blog.html</loc>
-    <lastmod>2025-07-29T21:08:21.202Z</lastmod>
+    <loc>https://cooper-richason.github.io/blog/notes/llms/huggingface-course/index.html</loc>
+    <lastmod>2025-09-06T00:47:07.843Z</lastmod>
   </url>
   <url>
-    <loc>https://cooper-richason.github.io/blog/notes.html</loc>
-    <lastmod>2025-07-29T21:08:21.240Z</lastmod>
+    <loc>https://cooper-richason.github.io/blog/notes/llms/index.html</loc>
+    <lastmod>2025-09-06T00:47:07.843Z</lastmod>
   </url>
   <url>
-    <loc>https://cooper-richason.github.io/blog/index.html</loc>
-    <lastmod>2025-07-29T21:08:21.240Z</lastmod>
+    <loc>https://cooper-richason.github.io/blog/notes/agents/huggingface-course/p1.html</loc>
+    <lastmod>2025-09-06T00:47:07.843Z</lastmod>
   </url>
   <url>
-    <loc>https://cooper-richason.github.io/blog/notes/llms/huggingface-course/p1.html</loc>
-    <lastmod>2025-07-29T21:08:21.240Z</lastmod>
+    <loc>https://cooper-richason.github.io/blog/posts/5- blog-post-ideas-for-data-scientists/index.html</loc>
+    <lastmod>2025-09-06T00:47:07.884Z</lastmod>
   </url>
   <url>
-    <loc>https://cooper-richason.github.io/blog/notes/agents/huggingface-course/index.html</loc>
-    <lastmod>2025-07-29T21:08:21.240Z</lastmod>
-  </url>
-  <url>
-    <loc>https://cooper-richason.github.io/blog/notes/agents/index.html</loc>
-    <lastmod>2025-07-29T21:08:21.240Z</lastmod>
+    <loc>https://cooper-richason.github.io/blog/posts/4- Deconstructing Decision Trees/index.html</loc>
+    <lastmod>2025-09-06T00:47:07.878Z</lastmod>
   </url>
   <url>
     <loc>https://cooper-richason.github.io/blog/posts/1- Run or Fun/index.html</loc>
-    <lastmod>2025-07-29T21:08:21.259Z</lastmod>
+    <lastmod>2025-09-06T00:47:07.862Z</lastmod>
+  </url>
+  <url>
+    <loc>https://cooper-richason.github.io/blog/notes/agents/index.html</loc>
+    <lastmod>2025-09-06T00:47:07.843Z</lastmod>
+  </url>
+  <url>
+    <loc>https://cooper-richason.github.io/blog/notes/agents/huggingface-course/index.html</loc>
+    <lastmod>2025-09-06T00:47:07.843Z</lastmod>
+  </url>
+  <url>
+    <loc>https://cooper-richason.github.io/blog/notes/llms/huggingface-course/p1.html</loc>
+    <lastmod>2025-09-06T00:47:07.843Z</lastmod>
+  </url>
+  <url>
+    <loc>https://cooper-richason.github.io/blog/notes.html</loc>
+    <lastmod>2025-09-06T00:47:07.843Z</lastmod>
+  </url>
+  <url>
+    <loc>https://cooper-richason.github.io/blog/index.html</loc>
+    <lastmod>2025-09-06T00:47:07.843Z</lastmod>
   </url>
 </urlset>
