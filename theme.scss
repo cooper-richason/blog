@@ -17,6 +17,10 @@ div.sourceCode {
     padding: 10px;    
 }
 
+.panel-fill {
+  border-radius: 0.25rem !important;
+}
+
 .breadcrumb {
     background-color: var(--quarto-scss-export-navbar-bg) !important;
     box-shadow: none ! important;
@@ -26,6 +30,10 @@ div.sourceCode {
 .nav-tabs {
     box-shadow: none ! important;
     margin-bottom: 0.5rem ! important;
+}
+
+.nav-link.active {
+  border-radius: 0.25rem !important;
 }
 
 // Code Tools Button

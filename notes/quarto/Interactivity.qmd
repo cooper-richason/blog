@@ -180,7 +180,7 @@ Here is a version where I make the right side have the light background color:
 ```
 :::
 
-## Final Result:
+## Final Result: {#final-result}
 
 Here is the final result! The final display also uses tabs to not only show the plots but the raw data. I did make some changes to CSS to remove the shadow on the tabs, which you can [find here](https://github.com/cooper-richason/blog/blob/main/theme.scss)
 
