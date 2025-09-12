@@ -11,15 +11,30 @@ div.sourceCode {
     @extend .card;
     @extend .bg-light;
     @extend .mb-3;
+    outline: none !important;
 
-    // Add padding to the top and bottom
-    padding-top: 10px;    
-    padding-bottom: 10px; 
+    // Add padding:
+    padding: 10px;    
 }
 
 .breadcrumb {
     background-color: var(--quarto-scss-export-navbar-bg) !important;
     box-shadow: none ! important;
+}
+
+// Tabs
+.nav-tabs {
+    box-shadow: none ! important;
+    margin-bottom: 0.5rem ! important;
+}
+
+// Code Tools Button
+.code-tools-button {
+  padding: .2rem 1rem ! important;
+  color: #163865 !important;
+  background-color: #f0f5fa;
+  border: none;
+  box-shadow: none ! important;
 }
 
 .quarto-title-breadcrumbs .breadcrumb li:last-of-type a {

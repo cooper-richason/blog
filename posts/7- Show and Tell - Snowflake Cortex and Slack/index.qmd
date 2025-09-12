@@ -1,0 +1,19 @@
+---
+title: How I built a data assistant Slack with Snowflake Cortex Analyst
+author: Cooper Richason
+date: '2025-09-06'
+date-modified: '2025-09-06'
+categories:
+- Snowflake
+- Snowflake Cortex
+- Slack
+- Slack Bolt
+draft: true
+toc: true
+---
+
+![](default_header.png)
+
+------------------------------------------------------------------------
+
+Start Post Here
