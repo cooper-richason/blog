@@ -20,6 +20,12 @@
     ]
   },
   {
+    "listing": "/notes/quarto/index.html",
+    "items": [
+      "/notes/quarto/Interactivity.html"
+    ]
+  },
+  {
     "listing": "/notes/agents/index.html",
     "items": [
       "/notes/agents/huggingface-course/index.html"
@@ -35,7 +41,8 @@
     "listing": "/notes.html",
     "items": [
       "/notes/agents/index.html",
-      "/notes/llms/index.html"
+      "/notes/llms/index.html",
+      "/notes/quarto/index.html"
     ]
   }
 ]

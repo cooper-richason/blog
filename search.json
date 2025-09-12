@@ -28,6 +28,92 @@
     ]
   },
   {
+    "objectID": "notes/quarto/Interactivity.html",
+    "href": "notes/quarto/Interactivity.html",
+    "title": "Interactivty",
+    "section": "",
+    "text": "Let’s use ObservableJS to make some interaction! You might recognize the name Observable for their word on the D3 graphing package framework or their data platform. They make a lot of cool stuff, and Quarto allows us to use some of their work to make interactive components on web pages!",
+    "crumbs": [
+      "Posts",
+      "Notes",
+      "Quarto",
+      "Interactivty"
+    ]
+  },
+  {
+    "objectID": "notes/quarto/Interactivity.html#quick-overview",
+    "href": "notes/quarto/Interactivity.html#quick-overview",
+    "title": "Interactivty",
+    "section": "Quick Overview:",
+    "text": "Quick Overview:\n\n1. Observable cells:\nYou can make Observable cells in your quarto document by using {ojs}, for example, it can do math:\n\n```{ojs}\n//| echo: fenced\n5 + 5\n```\n\n\n\n\n\n\n\n\n2. Importing Data:\nWe can import data using FileAttachment. Let’s use that to load the classic Palmer Penguins data:\n\n```{ojs}\n//| echo: fenced\npdata = FileAttachment(\"palmer-penguins.csv\").csv({typed: true})\n```\n\n\n\n\n\n\n\n\n3. User Inputs:\nWhat is viewof\n\n```{ojs}\n//| echo: fenced\nviewof mynum = Inputs.range(\n  [1, 50], \n  {value: 35, step: 1, label: \"Pick a Number!\"}\n)\n//print mynum\n```\n\n\n\n\n\n\n\n\nmynum",
+    "crumbs": [
+      "Posts",
+      "Notes",
+      "Quarto",
+      "Interactivty"
+    ]
+  },
+  {
+    "objectID": "notes/quarto/Interactivity.html#plotting",
+    "href": "notes/quarto/Interactivity.html#plotting",
+    "title": "Interactivty",
+    "section": "Plotting",
+    "text": "Plotting\n\nPlot Documentation\n\nPlot is the main canvas when graphing:\n\n```{ojs}\n//| echo: fenced\nPlot.plot({\n  marks: [\n    Plot.frame(), // Creates outline\n    Plot.text([\"Hello, world! This is our canvas!\"], {frameAnchor: \"middle\"})\n  ]\n})\n```\n\n\n\n\n\n\nLet’s make some data for us to graph:\n\n```{ojs}\n//| echo: fenced\naal = FileAttachment(\"AAL.csv\").csv({typed: true}) // American Airlines\n```\n\n\n\n\n\n\nNow, we cane make a simple graph using the same Plot.plot({marks:[]}). This time, let’s make a Line graph as our mark:\n\n```{ojs}\n//| echo: fenced\nPlot.plot({\n  marks: [\n    Plot.lineY(aal, {x: \"Date\", y: \"Close\"})\n  ]\n})\n```",
+    "crumbs": [
+      "Posts",
+      "Notes",
+      "Quarto",
+      "Interactivty"
+    ]
+  },
+  {
+    "objectID": "notes/quarto/Interactivity.html#making-a-two-pannel-display",
+    "href": "notes/quarto/Interactivity.html#making-a-two-pannel-display",
+    "title": "Interactivty",
+    "section": "Making a Two Pannel Display:",
+    "text": "Making a Two Pannel Display:\nI’m going to use the code found in their example as a base, but adjust the code to make it more visually appealing. Part of this is to accomodate the fact that I am using the morph bootswatch theme which has some ugly defaults.\nFirst, Let’s go ahead and figure out a general pannel design using .panel-sidebar and .panel-fill:\n\nOut of the Box:\n\n\n\nSide Panel:\nCode inside the .panel-sidebar goes here on the left.\n\n\n\n\nMain Pannel:\nCode inside the .panel-fill goes here on the right. I’m going to go ahead and add an image from Google so we can get the feel for what this might look like.\n\n\n\n\n\nOut of the box, the sidebar panned gets the light background and a drop shadow from the morph theme to make it look recessed. Annoyingly, the content side panel just uses the general background color. This might the the desired effect for some use cases, but I find it kind of distracting.\nI think the following fixes will make it look better:\n\n1. Horizontal Padding:\nEspecially on the side panel, the text is too close to the side. We can add horizontal padding using .px, which can take a number 1 through 5 (i.e. `.px-5’).\n\n\n2. Vertical Padding:\nWhile we’re at it, let’s also add some vertical padding. Because I’m using a header, the vertical padding isn’t too bad, but normal text, the it was also far to close to the top edge. We can add vertical padding in a similar way to horizontal padding, except with .py\n\n\n3. Drop the Shadow (Pun Intended):\nLet’s also adjust the current shadow. I’m going to replace it with a small shadow from Bootswatch: .shadow-sm\n\n\n4. Margins:\nI’m also going to adjust the left margin on the content panel to increase the space between the two panels. This can be down with .ml (Margin Left).\n\nUpdated Version:\nHere is the pannel layout with the properties described above!\n\n\n\n\nCSS Properties:\n.px-3 \n.py-3 \n.shadow-sm\n\n\n\n\nCSS Properties:\n.px-3 \n.py-3 \n.ml-2\n\n\n\n\n\nLight Background:\nHere is a version where I make the right side have the light background color:\n\n\n\nCSS Properties:\n.px-3 \n.py-3 \n.shadow-sm\n\n\n\n\nCSS Properties:\n.px-3 \n.py-3 \n.shadow-sm\n.bg-light",
+    "crumbs": [
+      "Posts",
+      "Notes",
+      "Quarto",
+      "Interactivty"
+    ]
+  },
+  {
+    "objectID": "notes/quarto/Interactivity.html#final-result",
+    "href": "notes/quarto/Interactivity.html#final-result",
+    "title": "Interactivty",
+    "section": "Final Result:",
+    "text": "Final Result:\nHere is the final result! The final display also uses tabs to not only show the plots but the raw data. I did make some changes to CSS to remove the shadow on the tabs, which you can find here\n\n\nFilters:\n\nviewof bill_length_min = Inputs.range(\n  [32, 50], \n  {value: 35, step: 1, label: \"Bill length (min):\"}\n)\nviewof islands = Inputs.checkbox(\n  [\"Torgersen\", \"Biscoe\", \"Dream\"], \n  { value: [\"Torgersen\", \"Biscoe\"], \n    label: \"Islands:\"\n  }\n)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPlotData\n\n\n\nfiltered = pdata.filter(function(penguin) {\n  return bill_length_min &lt; penguin.bill_length_mm &&\n         islands.includes(penguin.island);\n})\n\nPlot.rectY(filtered, \n  Plot.binX(\n    {y: \"count\"}, \n    {x: \"body_mass_g\", fill: \"species\", thresholds: 20}\n  ))\n  .plot({\n    facet: {\n      data: filtered,\n      x: \"sex\",\n      y: \"species\",\n      marginRight: 80\n    },\n    marks: [\n      Plot.frame(),\n    ]\n  }\n)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nInputs.table(filtered)",
+    "crumbs": [
+      "Posts",
+      "Notes",
+      "Quarto",
+      "Interactivty"
+    ]
+  },
+  {
+    "objectID": "posts/1- Run or Fun/index.html",
+    "href": "posts/1- Run or Fun/index.html",
+    "title": "My First Machine Learning Project: Fun or RUN",
+    "section": "",
+    "text": "Welcome to my latest adventure in the world of data science! I’ve recently started watching Jeremy Howard’s amazing lecture series on deep learning, Practical Deep Learning for Coders, and I’ve been feeling very inspired by Jeremy to play around with deep learning and simply try things.\nFor my first deep learning project, I decided to create an image classifier, since Jermey had several examples on these, and I eventually landed on the idea of a movie poster classifier! My goals with this project are to:"
+  },
+  {
+    "objectID": "posts/1- Run or Fun/index.html#try-the-ai-yourself",
+    "href": "posts/1- Run or Fun/index.html#try-the-ai-yourself",
+    "title": "My First Machine Learning Project: Fun or RUN",
+    "section": "Try the AI Yourself!",
+    "text": "Try the AI Yourself!\n\n\n\n\nGitHub Repository\n\nHuggingface Space\n\n\nFuture Horizons: Expanding “Fun or RUN”\nMy journey doesn’t stop here! I’m planning to enhance the model’s accuracy, broaden its genre recognition capabilities, and upload it to Huggingface Spaces. My next step involves using web scraping to gather a more diverse and accurate collection of movie posters from IMDb, taking advantage of their extensive genre listings.\n\n\nWrapping Up\nThis project has been an incredible learning experience, blending my love for movies with my passion for data science. It’s fascinating to see how AI can interpret visual media, and I’m excited to see where this path leads. I encourage you to try out Fun or RUN and share your thoughts. Have you worked on a similar project? Let’s exchange ideas and learn from each other!"
+  },
+  {
+    "objectID": "posts/4- Deconstructing Decision Trees/index.html",
+    "href": "posts/4- Deconstructing Decision Trees/index.html",
+    "title": "Deconstructing Decision Trees",
+    "section": "",
+    "text": "I first learned about decision trees when I took Jeremy Howard’s incredible deep learning course, Practical Deep Learning for Coders in 2023, Jeremy made such a convincing argument in favor of using decision trees, especially as model when starting project, because of the benefits they offer:\n\nThey are interpretable - It is very easy to understand why a decision is made and what are the most important factors in making a decision. This can be really valuable if you need to be able to explain how decision are made to stakeholders, but even if you don’t end up using a tree model as your final product, starting with can be invaluable when one is starting a project and needs to get a feel for the data and experiment with with features.\nThey are robust – Unlike other models like logistic regression, tree based models are do not require data normalization, can handle missing values, and they can handle both categorical and numerical features with ease.\nThey are quick to build – Because of there robust nature and how simple they are under the hood, one doesn’t need to do a bunch of leg work before one can get a model running.\n\nHopefully those benefits have enticed you enough to want to learn more about decision trees! To begin let’s start with a single tree model, aka a decision tree.\n\nHow Do Decision Trees Work?\nTree based models work by making a series of binary splits of the data. A binary spit is basically just a yes/no or true/false question about the data like “is a value in a column greater than X”, but by doing this over and over we can slowly split the data into purer groups if we choose good splits. To find the best split at each step, the model looks at all of the values available in each column and finds the combination does the best job of separating into the chunk of data.\nFor example, let’s assume we are working with a dataset about high school students and what type of college they are going to next year. To make the first split, the model looks at all of the information and finds that the whether the student goes to a private high school (“HS”) is the best predictor of whether a student goes to a private university:\n\n\n\n\n\nflowchart TD\n        A[\"Starting Dataset\"]\n        A -- Private HS --&gt; C([\"Predict Private\"])\n        A -- Public  HS--&gt; D([\"Public HS Students\"])\n\n\n\n\n\n\nLet’s assume that the model tries split the public high school students group since that group has the lower accuracy and that the model learns that whether the student had an SAT score greater or less than 1800 is the best predictor of whether a public school student will go to a private or public university:\n\n\n\n\n\nflowchart TD\n        A[\"Starting Dataset\"]\n        A -- Private HS --&gt; C([\"Predict Private\"])\n        A -- Public  HS--&gt; D[\"Public HS Students\"]\n       D -- less than 1800 --&gt; E([\"Predict Public\"])\n      D -- 1800 and higher--&gt; F([\"Predict Private\"])\n\n\n\n\n\n\nNow we have a decision tree based on off two splits! When running a model in the real world, we will probably want to have have more than two splits since the more splits you have, the better the model is able to make, up to a point. Eventually, we need to stop splitting the tree so that we don’t overfit the model to our data. With python packages like sci-kit learn, the model will continue to split the tree over and over until it is not able to make any more splits because of stopping criteria you specify. Some examples of stopping criteria are the total depth of the tree or the number of nodes is a tree, but the ones I typically prefer are the minimum size of a resulting leaf or specifying the minimum number of records needed to make a new split.\nLastly, I should probably mention the terminology used. When talking about decision trees, we call each of the split points a “node”, with the starting node being called the root node and the subsequent nodes the decision nodes. We then refer to the final data chucks as the leaves of the tree, and these are with ovals in the diagram.\n\n\nExample with Code\nTerms Covered:\n\nBinary Splits:\n\nTrue or False questions that split the data into two groups. Each split is determined by what split will do the best job of purifying the data.\n\nDecision Tree:\n\nA model that makes predictions by making a series of binary splits\n\n\n\n\n\n\n Back to top"
+  },
+  {
     "objectID": "posts/5- blog-post-ideas-for-data-scientists/index.html",
     "href": "posts/5- blog-post-ideas-for-data-scientists/index.html",
     "title": "Blog Post Ideas for Data Scientists",
@@ -47,27 +133,6 @@
     "title": "Blog Post Ideas for Data Scientists",
     "section": "Additional Ideas:",
     "text": "Additional Ideas:\n\nFirst Thoughts with a new tool\nNew Things I’ve Learned about a tool\nThe Hows: How I did __ or How I used __ to do __ or How I built _ with __\nMy First __ Project"
-  },
-  {
-    "objectID": "posts/4- Deconstructing Decision Trees/index.html",
-    "href": "posts/4- Deconstructing Decision Trees/index.html",
-    "title": "Deconstructing Decision Trees",
-    "section": "",
-    "text": "I first learned about decision trees when I took Jeremy Howard’s incredible deep learning course, Practical Deep Learning for Coders in 2023, Jeremy made such a convincing argument in favor of using decision trees, especially as model when starting project, because of the benefits they offer:\n\nThey are interpretable - It is very easy to understand why a decision is made and what are the most important factors in making a decision. This can be really valuable if you need to be able to explain how decision are made to stakeholders, but even if you don’t end up using a tree model as your final product, starting with can be invaluable when one is starting a project and needs to get a feel for the data and experiment with with features.\nThey are robust – Unlike other models like logistic regression, tree based models are do not require data normalization, can handle missing values, and they can handle both categorical and numerical features with ease.\nThey are quick to build – Because of there robust nature and how simple they are under the hood, one doesn’t need to do a bunch of leg work before one can get a model running.\n\nHopefully those benefits have enticed you enough to want to learn more about decision trees! To begin let’s start with a single tree model, aka a decision tree.\n\nHow Do Decision Trees Work?\nTree based models work by making a series of binary splits of the data. A binary spit is basically just a yes/no or true/false question about the data like “is a value in a column greater than X”, but by doing this over and over we can slowly split the data into purer groups if we choose good splits. To find the best split at each step, the model looks at all of the values available in each column and finds the combination does the best job of separating into the chunk of data.\nFor example, let’s assume we are working with a dataset about high school students and what type of college they are going to next year. To make the first split, the model looks at all of the information and finds that the whether the student goes to a private high school (“HS”) is the best predictor of whether a student goes to a private university:\n\n\n\n\n\nflowchart TD\n        A[\"Starting Dataset\"]\n        A -- Private HS --&gt; C([\"Predict Private\"])\n        A -- Public  HS--&gt; D([\"Public HS Students\"])\n\n\n\n\n\n\nLet’s assume that the model tries split the public high school students group since that group has the lower accuracy and that the model learns that whether the student had an SAT score greater or less than 1800 is the best predictor of whether a public school student will go to a private or public university:\n\n\n\n\n\nflowchart TD\n        A[\"Starting Dataset\"]\n        A -- Private HS --&gt; C([\"Predict Private\"])\n        A -- Public  HS--&gt; D[\"Public HS Students\"]\n       D -- less than 1800 --&gt; E([\"Predict Public\"])\n      D -- 1800 and higher--&gt; F([\"Predict Private\"])\n\n\n\n\n\n\nNow we have a decision tree based on off two splits! When running a model in the real world, we will probably want to have have more than two splits since the more splits you have, the better the model is able to make, up to a point. Eventually, we need to stop splitting the tree so that we don’t overfit the model to our data. With python packages like sci-kit learn, the model will continue to split the tree over and over until it is not able to make any more splits because of stopping criteria you specify. Some examples of stopping criteria are the total depth of the tree or the number of nodes is a tree, but the ones I typically prefer are the minimum size of a resulting leaf or specifying the minimum number of records needed to make a new split.\nLastly, I should probably mention the terminology used. When talking about decision trees, we call each of the split points a “node”, with the starting node being called the root node and the subsequent nodes the decision nodes. We then refer to the final data chucks as the leaves of the tree, and these are with ovals in the diagram.\n\n\nExample with Code\nTerms Covered:\n\nBinary Splits:\n\nTrue or False questions that split the data into two groups. Each split is determined by what split will do the best job of purifying the data.\n\nDecision Tree:\n\nA model that makes predictions by making a series of binary splits\n\n\n\n\n\n\n Back to top"
-  },
-  {
-    "objectID": "posts/1- Run or Fun/index.html",
-    "href": "posts/1- Run or Fun/index.html",
-    "title": "My First Machine Learning Project: Fun or RUN",
-    "section": "",
-    "text": "Welcome to my latest adventure in the world of data science! I’ve recently started watching Jeremy Howard’s amazing lecture series on deep learning, Practical Deep Learning for Coders, and I’ve been feeling very inspired by Jeremy to play around with deep learning and simply try things.\nFor my first deep learning project, I decided to create an image classifier, since Jermey had several examples on these, and I eventually landed on the idea of a movie poster classifier! My goals with this project are to:"
-  },
-  {
-    "objectID": "posts/1- Run or Fun/index.html#try-the-ai-yourself",
-    "href": "posts/1- Run or Fun/index.html#try-the-ai-yourself",
-    "title": "My First Machine Learning Project: Fun or RUN",
-    "section": "Try the AI Yourself!",
-    "text": "Try the AI Yourself!\n\n\n\n\nGitHub Repository\n\nHuggingface Space\n\n\nFuture Horizons: Expanding “Fun or RUN”\nMy journey doesn’t stop here! I’m planning to enhance the model’s accuracy, broaden its genre recognition capabilities, and upload it to Huggingface Spaces. My next step involves using web scraping to gather a more diverse and accurate collection of movie posters from IMDb, taking advantage of their extensive genre listings.\n\n\nWrapping Up\nThis project has been an incredible learning experience, blending my love for movies with my passion for data science. It’s fascinating to see how AI can interpret visual media, and I’m excited to see where this path leads. I encourage you to try out Fun or RUN and share your thoughts. Have you worked on a similar project? Let’s exchange ideas and learn from each other!"
   },
   {
     "objectID": "notes/llms/huggingface-course/p1.html",
