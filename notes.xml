@@ -9,8 +9,8 @@
 <link>https://cooper-richason.github.io/blog/notes.html</link>
 <atom:link href="https://cooper-richason.github.io/blog/notes.xml" rel="self" type="application/rss+xml"/>
 <description>Data Science Blog and Portfolio</description>
-<generator>quarto-1.7.34</generator>
-<lastBuildDate>Fri, 12 Sep 2025 02:57:39 GMT</lastBuildDate>
+<generator>quarto-1.8.24</generator>
+<lastBuildDate>Mon, 15 Sep 2025 18:41:55 GMT</lastBuildDate>
 <item>
   <title>Agents</title>
   <link>https://cooper-richason.github.io/blog/notes/agents/</link>
@@ -41,7 +41,7 @@ Description
 </thead>
 <tbody class="list">
 
-<tr data-index="0" data-listing-file-modified-sort="1757645825007" data-listing-reading-time-sort="1" data-listing-word-count-sort="1" data-listing-title-sort="HuggingFace.co Course" data-listing-filename-sort="index.qmd">
+<tr data-index="0" data-listing-file-modified-sort="1757961691036" data-listing-reading-time-sort="1" data-listing-word-count-sort="1" data-listing-title-sort="HuggingFace.co Course" data-listing-filename-sort="index.qmd">
 <td>
 <a href="../../notes/agents/huggingface-course/index.html" class="title listing-title">HuggingFace.co Course</a>
 </td>
@@ -56,7 +56,7 @@ Description
 <div class="listing-no-matching d-none">No matching items</div>
 </div><a onclick="window.scrollTo(0, 0); return false;" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a> ]]></description>
   <guid>https://cooper-richason.github.io/blog/notes/agents/</guid>
-  <pubDate>Fri, 12 Sep 2025 02:57:39 GMT</pubDate>
+  <pubDate>Mon, 15 Sep 2025 18:41:55 GMT</pubDate>
 </item>
 <item>
   <title>LLMs</title>
@@ -88,7 +88,7 @@ Description
 </thead>
 <tbody class="list">
 
-<tr data-index="0" data-listing-file-modified-sort="1757645825007" data-listing-reading-time-sort="1" data-listing-word-count-sort="1" data-listing-title-sort="HuggingFace.co Course" data-listing-filename-sort="index.qmd">
+<tr data-index="0" data-listing-file-modified-sort="1757961691036" data-listing-reading-time-sort="1" data-listing-word-count-sort="1" data-listing-title-sort="HuggingFace.co Course" data-listing-filename-sort="index.qmd">
 <td>
 <a href="../../notes/llms/huggingface-course/index.html" class="title listing-title">HuggingFace.co Course</a>
 </td>
@@ -103,7 +103,7 @@ Description
 <div class="listing-no-matching d-none">No matching items</div>
 </div><a onclick="window.scrollTo(0, 0); return false;" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a> ]]></description>
   <guid>https://cooper-richason.github.io/blog/notes/llms/</guid>
-  <pubDate>Fri, 12 Sep 2025 02:57:39 GMT</pubDate>
+  <pubDate>Mon, 15 Sep 2025 18:41:55 GMT</pubDate>
 </item>
 <item>
   <title>Quarto</title>
@@ -135,7 +135,7 @@ Description
 </thead>
 <tbody class="list">
 
-<tr data-index="0" data-categories="" data-listing-date-sort="1757462400000" data-listing-file-modified-sort="1757645825008" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="824" data-listing-title-sort="Interactivty" data-listing-filename-sort="Interactivity.qmd">
+<tr data-index="0" data-categories="" data-listing-date-sort="1757462400000" data-listing-file-modified-sort="1757961691037" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="824" data-listing-title-sort="Interactivty" data-listing-filename-sort="Interactivity.qmd">
 <td>
 <a href="../../notes/quarto/Interactivity.html" class="title listing-title">Interactivty</a>
 </td>
@@ -150,7 +150,7 @@ Description
 <div class="listing-no-matching d-none">No matching items</div>
 </div><a onclick="window.scrollTo(0, 0); return false;" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a> ]]></description>
   <guid>https://cooper-richason.github.io/blog/notes/quarto/</guid>
-  <pubDate>Fri, 12 Sep 2025 02:57:39 GMT</pubDate>
+  <pubDate>Mon, 15 Sep 2025 18:41:55 GMT</pubDate>
 </item>
 </channel>
 </rss>

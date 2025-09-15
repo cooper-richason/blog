@@ -9,7 +9,7 @@
 <link>https://cooper-richason.github.io/blog/blog.html</link>
 <atom:link href="https://cooper-richason.github.io/blog/blog.xml" rel="self" type="application/rss+xml"/>
 <description>Data Science Blog and Portfolio</description>
-<generator>quarto-1.7.34</generator>
+<generator>quarto-1.8.24</generator>
 <lastBuildDate>Mon, 14 Jul 2025 00:00:00 GMT</lastBuildDate>
 <item>
   <title>Blog Post Ideas for Data Scientists</title>
@@ -168,7 +168,7 @@
 <section id="the-challenge-horror-or-comedy" class="level3">
 <h3 class="anchored" data-anchor-id="the-challenge-horror-or-comedy">The Challenge: Horror or Comedy?</h3>
 <p>For the first iteration of “Fun or RUN”, I set out to build a deep learning model that predicts whether a movie is a horror or a comedy movie based on its poster. I gathered around 150 images for each category using Jeremy’s DuckDuckGo image function. However, I faced a challenge: the search results often included repeated movies, especially when breaking down my searches by decade. I’m considering implementing web scraping from IMDb for more varied and accurate data in the future, but the images I was able to gather so far are good enough to build the model.</p>
-<div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><span class="im" style="color: #00769E;
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><span class="im" style="color: #00769E;
 background-color: null;
 font-style: inherit;">from</span> duckduckgo_search <span class="im" style="color: #00769E;
 background-color: null;
@@ -318,12 +318,12 @@ font-style: inherit;">400</span>, dest<span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">=</span>path<span class="op" style="color: #5E5E5E;
 background-color: null;
-font-style: inherit;">/</span>o)</span></code></pre></div>
+font-style: inherit;">/</span>o)</span></code></pre></div></div>
 </section>
 <section id="training-the-model-a-learning-experience" class="level3">
 <h3 class="anchored" data-anchor-id="training-the-model-a-learning-experience">Training the Model: A Learning Experience</h3>
 <p>I chose <code>resnet18</code>, a timm model, as my learner for its simplicity and speed, as my primary goal was to understand the model-building process rather than achieving high accuracy. I know that there are likely even better models that make this trade-off, but I opted to make a quick selection of a <em>good</em> model rather than taking a lot of time to find the <em>perfect</em> model. I trained the resnet18 on a random split of the movie posters, with the folder names serving as the category labels. Post-training, I also used fastai’s <code>ImageClassifierCleaner</code> to refine the model, removing mislabeled images. This step helped with cleaning faulty images from the DuckDuckGo search.</p>
-<div class="sourceCode" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1">dls <span class="op" style="color: #5E5E5E;
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1">dls <span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">=</span> DataBlock(</span>
 <span id="cb2-2">    blocks<span class="op" style="color: #5E5E5E;
@@ -355,8 +355,8 @@ font-style: inherit;">'squish'</span>)]</span>
 background-color: null;
 font-style: inherit;">=</span><span class="dv" style="color: #AD0000;
 background-color: null;
-font-style: inherit;">32</span>)</span></code></pre></div>
-<div class="sourceCode" id="cb3" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><span class="co" style="color: #5E5E5E;
+font-style: inherit;">32</span>)</span></code></pre></div></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><span class="co" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;"># Training the model:</span></span>
 <span id="cb3-2">learn <span class="op" style="color: #5E5E5E;
@@ -370,13 +370,13 @@ background-color: null;
 font-style: inherit;"># Finetuning the nodel:</span></span>
 <span id="cb3-5">learn.fine_tune(<span class="dv" style="color: #AD0000;
 background-color: null;
-font-style: inherit;">5</span>)</span></code></pre></div>
+font-style: inherit;">5</span>)</span></code></pre></div></div>
 </section>
 <section id="building-an-gradio-interface" class="level3">
 <h3 class="anchored" data-anchor-id="building-an-gradio-interface">Building an Gradio Interface:</h3>
 <p>After exporting the model, I then used <a href="https://www.gradio.app/">Gradio</a> to build an interface. I made a pretty basic interface with the ability to upload files, a couple pre-uploaded examples, and a display of the model’s predictions. Overall, it seems like the model does pretty well with stereotypical movie posters for both genres, but it struggles with less obvious examples, such as The Shinning or Disney’s Wish.</p>
 <p>Here is the general structure of the Gradio <code>Interface</code> function:</p>
-<div class="sourceCode" id="cb4" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1">demo <span class="op" style="color: #5E5E5E;
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1">demo <span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">=</span> gr.Interface(fn, inputs, outputs) </span>
 <span id="cb4-2"></span>
@@ -399,9 +399,9 @@ font-style: inherit;">"Super Cool Interface"</span></span>
 background-color: null;
 font-style: inherit;">=</span> <span class="st" style="color: #20794D;
 background-color: null;
-font-style: inherit;">"I take in inputs and give you an output"</span>)</span></code></pre></div>
+font-style: inherit;">"I take in inputs and give you an output"</span>)</span></code></pre></div></div>
 <p>After creating a function to take the input image and give a prediction, here was my interface:</p>
-<div class="sourceCode" id="cb5" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><span class="co" style="color: #5E5E5E;
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><span class="co" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">## Interface Setup:</span></span>
 <span id="cb5-2"></span>
@@ -468,7 +468,7 @@ font-style: inherit;">"Image classifier that predicts a movie's genre based on t
 <span id="cb5-17">                    theme <span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">=</span> gr.themes.Base())</span>
-<span id="cb5-18">demo.launch()</span></code></pre></div>
+<span id="cb5-18">demo.launch()</span></code></pre></div></div>
 </section>
 <section id="try-the-ai-yourself" class="level2 page-columns page-full">
 <h2 class="anchored" data-anchor-id="try-the-ai-yourself"><strong>Try the AI Yourself!</strong></h2>
